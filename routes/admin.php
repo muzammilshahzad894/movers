@@ -5,10 +5,6 @@ use App\Http\Controllers\admin\DashboardController;
 use App\Http\Controllers\admin\AdminLoginController;
 use App\Http\Controllers\admin\ProfileController;
 
-Route::get('/', function () {
-    return redirect()->route('admin.login');
-});
-
 // check if user is already logged in then redirect to dashboard
 Route::middleware(['guest'])->group(function () {
     Route::match(['get', 'post'], '/admin/login', [AdminLoginController::class, 'login'])->name('admin.login');
