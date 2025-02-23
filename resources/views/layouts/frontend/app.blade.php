@@ -10,7 +10,7 @@
     <meta name="keywords" content="">
 
     <!-- title -->
-    <title>Moverx - Moving Company HTML5 Template</title>
+    <title>Nexus Movers - Moving Company HTML5 Template</title>
 
     <!-- favicon -->
     <link rel="icon" type="image/x-icon" href="{{ asset('frontend-assets/img/logo/favicon.png') }}">
@@ -46,8 +46,8 @@
                     <div class="header-top-left">
                         <div class="header-top-contact">
                             <ul>
-                                <li><a href="#"><i class="far fa-map-marker-alt"></i>25/B Milford Road, New York</a></li>
-                                <li><a href="#"><i class="far fa-clock"></i>Sun - Fri (08AM - 10PM)</a></li>
+                                <li><a href="#"><i class="far fa-map-marker-alt"></i>1234 Elm Street, Springfield, AUS</a></li>
+                                <li><a href="#"><i class="far fa-clock"></i>Mon - Fri (08AM - 10PM)</a></li>
                             </ul>
                         </div>
                     </div>
@@ -67,7 +67,7 @@
         <div class="main-navigation">
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
-                    <a class="navbar-brand" href="index-2.html">
+                    <a class="navbar-brand" href="{{ route('frontend.index') }}">
                         <img src="{{ asset('frontend-assets/img/logo/nexus-logo.png') }}" alt="logo">
                     </a>
                     <div class="mobile-menu-right">
@@ -79,10 +79,18 @@
                     </div>
                     <div class="collapse navbar-collapse" id="main_nav">
                         <ul class="navbar-nav">
-                            <li class="nav-item"><a class="nav-link" href="#"> Home </a></li>
-                            <li class="nav-item"><a class="nav-link" href="#"> About </a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+                            <li class="nav-item">
+                                <a class="nav-link {{ request()->routeIs('frontend.index') ? 'active' : '' }}" href="{{ route('frontend.index') }}"> Home </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link {{ request()->routeIs('frontend.about') ? 'active' : '' }}" href="{{ route('frontend.about') }}"> About </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link {{ request()->routeIs('frontend.contact') ? 'active' : '' }}" href="{{ route('frontend.contact') }}">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Services</a>
+                            </li>
                         </ul>
                         <div class="header-nav-right">
                             <div class="header-btn">
@@ -95,19 +103,6 @@
         </div>
     </header>
     <!-- header area end -->
-
-
-    <!-- popup search -->
-    <div class="search-popup">
-        <button class="close-search"><span class="far fa-times"></span></button>
-        <form action="#">
-            <div class="form-group">
-                <input type="search" name="search-field" placeholder="Search Here..." required>
-                <button type="submit"><i class="far fa-search"></i></button>
-            </div>
-        </form>
-    </div>
-    <!-- popup search end -->
 
     @yield('content')
 
@@ -122,8 +117,7 @@
                                 <img src="{{ asset('frontend-assets/img/logo/nexus-logo-light.png') }}" alt="">
                             </a>
                             <p class="mb-20">
-                                We are many variations of passages available but the majority have suffered alteration
-                                in some form by injected humour words which don't look even slightly believable.
+                                Looking for a moving company you can trust? We offer safe, efficient, and budget-friendly moving solutions tailored to your needs. Your satisfaction is our priority!
                             </p>
                             <ul class="footer-social">
                                 <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
@@ -137,12 +131,12 @@
                         <div class="footer-widget-box">
                             <h4 class="footer-widget-title">Contact Us</h4>
                             <ul class="footer-contact">
-                                <li><i class="far fa-map-marker-alt"></i>25/B Milford Road, New York</li>
-                                <li><a href="tel:+21236547898"><i class="far fa-phone"></i>+2 123 654 7898</a></li>
+                                <li><i class="far fa-map-marker-alt"></i>1234 Elm Street, Springfield, AUS</li>
+                                <li><a href="tel:+11111111111"><i class="far fa-phone"></i>+1 123 456 7898</a></li>
                                 <li><a href="https://live.themewild.com/cdn-cgi/l/email-protection#771e19111837120f161a071b125914181a"><i
                                             class="far fa-envelope"></i><span class="__cf_email__" data-cfemail="6a03040c052a0f120b071a060f44090507">[email&#160;protected]</span></a>
                                 </li>
-                                <li><i class="far fa-clock"></i>Sun - Fri (08AM - 10PM)</li>
+                                <li><i class="far fa-clock"></i>Mon - Fri (08AM - 10PM)</li>
                             </ul>
                         </div>
                     </div>
@@ -150,10 +144,10 @@
                         <div class="footer-widget-box list">
                             <h4 class="footer-widget-title">Quick Links</h4>
                             <ul class="footer-list">
-                                <li><a href="#"><i class="fas fa-caret-right"></i> About Us</a></li>
-                                <li><a href="#"><i class="fas fa-caret-right"></i> FAQ's</a></li>
-                                <li><a href="#"><i class="fas fa-caret-right"></i> Terms Of Service</a></li>
-                                <li><a href="#"><i class="fas fa-caret-right"></i> Privacy policy</a></li>
+                                <li><a href="{{ route('frontend.about') }}"><i class="fas fa-caret-right"></i> About Us</a></li>
+                                <li><a href="{{ route('frontend.faqs') }}"><i class="fas fa-caret-right"></i> FAQ's</a></li>
+                                <li><a href="{{ route('frontend.terms') }}"><i class="fas fa-caret-right"></i> Terms Of Service</a></li>
+                                <li><a href="{{ route('frontend.privacyPolicy') }}"><i class="fas fa-caret-right"></i> Privacy policy</a></li>
                                 <li><a href="#"><i class="fas fa-caret-right"></i> Our Services</a></li>
                             </ul>
                         </div>
@@ -166,14 +160,14 @@
                 <div class="row">
                     <div class="col-lg-6 align-self-center">
                         <p class="copyright-text">
-                            &copy; Copyright <span id="date"></span> <a href="#"> MOVERX </a> All
+                            &copy; Copyright <span id="date"></span> <a href="#"> Nexus Movers </a> All
                             Rights Reserved.
                         </p>
                     </div>
                     <div class="col-lg-6 align-self-center">
                         <ul class="footer-menu">
-                            <li><a href="#">Terms Of Services</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="{{ route('frontend.terms') }}">Terms Of Services</a></li>
+                            <li><a href="{{ route('frontend.privacyPolicy') }}">Privacy Policy</a></li>
                         </ul>
                     </div>
                 </div>

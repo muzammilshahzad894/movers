@@ -66,7 +66,7 @@
                                 </div>
                                 <div class="contact-info-content">
                                     <h5>Office Address</h5>
-                                    <p>25/B Milford, New York, USA</p>
+                                    <p>1234 Elm Street, Springfield, AUS</p>
                                 </div>
                             </div>
                             <div class="contact-info">
@@ -75,7 +75,7 @@
                                 </div>
                                 <div class="contact-info-content">
                                     <h5>Call Us</h5>
-                                    <p>+2 123 4565 789</p>
+                                    <p>+1 123 456 7898</p>
                                 </div>
                             </div>
                             <div class="contact-info">
@@ -84,7 +84,9 @@
                                 </div>
                                 <div class="contact-info-content">
                                     <h5>Email Us</h5>
-                                    <p><a href="https://live.themewild.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="1c75727a735c79647d716c7079327f7371">[email&#160;protected]</a></p>
+                                    <p>
+                                        <a href="#">[email&#160;protected]</a>
+                                    </p>
                                 </div>
                             </div>
                             <div class="contact-info">
@@ -93,7 +95,7 @@
                                 </div>
                                 <div class="contact-info-content">
                                     <h5>Office Open</h5>
-                                    <p>Sun - Fri (08AM - 10PM)</p>
+                                    <p>Mon - Fri (08AM - 10PM)</p>
                                 </div>
                             </div>
                         </div>

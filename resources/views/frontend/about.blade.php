@@ -30,13 +30,9 @@
                     <div class="about-right">
                         <div class="site-heading mb-3">
                             <span class="site-title-tagline">About Us</span>
-                            <h2 class="site-title">Moving With Moverx Is Always Easy And Fast</h2>
+                            <h2 class="site-title">Moving With Nexus Movers Is Always Easy And Fast</h2>
                         </div>
-                        <p class="about-text">There are many variations of passages of Lorem Ipsum available, but
-                            the majority have suffered alteration in some form, by injected humour, or randomised
-                            words which don't look even slightly believable. If you are going to use a passage of
-                            Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle
-                            of text.</p>
+                        <p class="about-text">At Nexus Movers, we provide stress-free and reliable moving services. With experienced professionals, we ensure safe packing, secure transportation, and timely delivery. Whether moving locally or long-distance, we handle every detail with care, making your relocation smooth, hassle-free, and affordable. Our customer-focused approach guarantees excellent service and personalized solutions.</p>
                         <div class="about-list-wrapper">
                             <ul class="about-list list-unstyled">
                                 <li>
@@ -129,151 +125,143 @@
 				</div>
 			</div>
 			<div class="row g-1">
-                    <div class="col-md-6 col-lg-3">
-                        <div class="service-item">
-                            <div class="service-icon">
-                                <i class="fal fa-map-marker-alt"></i>
-                            </div>
-                            <div class="service-icon-shadow"></div>
-                            <h3 class="service-title">
-                                <a href="#">Local Moving</a>
-                            </h3>
-                            <p class="service-text">
-                                There are many variations of passages available but the majority have suffered
-                                alteration injected.
-                            </p>
-                            <div class="service-arrow">
-                                <a href="#" class="theme-btn">Read More <span class="far fa-arrow-right"></span></a>
-                            </div>
+                <div class="col-md-6 col-lg-3">
+					<div class="service-item">
+						<div class="service-icon">
+							<i class="fal fa-map-marker-alt"></i>
+						</div>
+						<div class="service-icon-shadow"></div>
+						<h3 class="service-title">
+							<a href="#">Local Moving</a>
+						</h3>
+						<p class="service-text">
+							Safe, efficient, and hassle-free relocation within your city with expert movers.
+						</p>
+						<div class="service-arrow">
+							<a href="#" class="theme-btn">Read More <span class="far fa-arrow-right"></span></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3">
+					<div class="service-item">
+						<div class="service-icon">
+							<i class="fal fa-box-alt"></i>
+						</div>
+						<div class="service-icon-shadow"></div>
+						<h3 class="service-title">
+							<a href="#">Box Delivery</a>
+						</h3>
+						<p class="service-text">
+							Get durable moving boxes delivered to your doorstep for easy packing convenience.
+						</p>
+						<div class="service-arrow">
+							<a href="#" class="theme-btn">Read More <span class="far fa-arrow-right"></span></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3">
+					<div class="service-item">
+						<div class="service-icon">
+							<i class="fal fa-route"></i>
+						</div>
+						<div class="service-icon-shadow"></div>
+						<h3 class="service-title">
+							<a href="#">Long Distance</a>
+						</h3>
+						<p class="service-text">
+							Reliable, secure, and timely transportation for stress-free long-distance relocations.
+						</p>
+						<div class="service-arrow">
+							<a href="#" class="theme-btn">Read More <span class="far fa-arrow-right"></span></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3">
+					<div class="service-item">
+						<div class="service-icon">
+							<i class="fal fa-boxes-alt"></i>
+						</div>
+						<div class="service-icon-shadow"></div>
+						<h3 class="service-title">
+							<a href="#">Loading & Unloading</a>
+						</h3>
+						<p class="service-text">
+							Professional handling ensures your belongings are safely loaded and unloaded.
+						</p>
+						<div class="service-arrow">
+							<a href="#" class="theme-btn">Read More <span class="far fa-arrow-right"></span></a>
+						</div>
+					</div>
+				</div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fal fa-globe-europe"></i>
                         </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="service-item">
-                            <div class="service-icon">
-                                <i class="fal fa-box-alt"></i>
-                            </div>
-                            <div class="service-icon-shadow"></div>
-                            <h3 class="service-title">
-                                <a href="#">Box Delivery</a>
-                            </h3>
-                            <p class="service-text">
-                                There are many variations of passages available but the majority have suffered
-                                alteration injected.
-                            </p>
-                            <div class="service-arrow">
-                                <a href="#" class="theme-btn">Read More <span class="far fa-arrow-right"></span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="service-item">
-                            <div class="service-icon">
-                                <i class="fal fa-route"></i>
-                            </div>
-                            <div class="service-icon-shadow"></div>
-                            <h3 class="service-title">
-                                <a href="#">Long Distance</a>
-                            </h3>
-                            <p class="service-text">
-                                There are many variations of passages available but the majority have suffered
-                                alteration injected.
-                            </p>
-                            <div class="service-arrow">
-                                <a href="#" class="theme-btn">Read More <span class="far fa-arrow-right"></span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="service-item">
-                            <div class="service-icon">
-                                <i class="fal fa-boxes-alt"></i>
-                            </div>
-                            <div class="service-icon-shadow"></div>
-                            <h3 class="service-title">
-                                <a href="#">Loading & Unloading</a>
-                            </h3>
-                            <p class="service-text">
-                                There are many variations of passages available but the majority have suffered
-                                alteration injected.
-                            </p>
-                            <div class="service-arrow">
-                                <a href="#" class="theme-btn">Read More <span class="far fa-arrow-right"></span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="service-item">
-                            <div class="service-icon">
-                                <i class="fal fa-globe-europe"></i>
-                            </div>
-                            <div class="service-icon-shadow"></div>
-                            <h3 class="service-title">
-                                <a href="#">International Moving</a>
-                            </h3>
-                            <p class="service-text">
-                                There are many variations of passages available but the majority have suffered
-                                alteration injected.
-                            </p>
-                            <div class="service-arrow">
-                                <a href="#" class="theme-btn">Read More <span class="far fa-arrow-right"></span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="service-item">
-                            <div class="service-icon">
-                                <i class="fal fa-building"></i>
-                            </div>
-                            <div class="service-icon-shadow"></div>
-                            <h3 class="service-title">
-                                <a href="#">Office Relocation</a>
-                            </h3>
-                            <p class="service-text">
-                                There are many variations of passages available but the majority have suffered
-                                alteration injected.
-                            </p>
-                            <div class="service-arrow">
-                                <a href="#" class="theme-btn">Read More <span class="far fa-arrow-right"></span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="service-item">
-                            <div class="service-icon">
-                                <i class="fal fa-warehouse-alt"></i>
-                            </div>
-                            <div class="service-icon-shadow"></div>
-                            <h3 class="service-title">
-                                <a href="#">Storage Units</a>
-                            </h3>
-                            <p class="service-text">
-                                There are many variations of passages available but the majority have suffered
-                                alteration injected.
-                            </p>
-                            <div class="service-arrow">
-                                <a href="#" class="theme-btn">Read More <span class="far fa-arrow-right"></span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="service-item">
-                            <div class="service-icon">
-                                <i class="fal fa-city"></i>
-                            </div>
-                            <div class="service-icon-shadow"></div>
-                            <h3 class="service-title">
-                                <a href="#">Corporate Moving</a>
-                            </h3>
-                            <p class="service-text">
-                                There are many variations of passages available but the majority have suffered
-                                alteration injected.
-                            </p>
-                            <div class="service-arrow">
-                                <a href="#" class="theme-btn">Read More <span class="far fa-arrow-right"></span></a>
-                            </div>
+                        <div class="service-icon-shadow"></div>
+                        <h3 class="service-title">
+                            <a href="#">International Moving</a>
+                        </h3>
+                        <p class="service-text">
+                            Seamless and secure global relocation with expert customs handling and logistics.
+                        </p>
+                        <div class="service-arrow">
+                            <a href="#" class="theme-btn">Read More <span class="far fa-arrow-right"></span></a>
                         </div>
                     </div>
                 </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fal fa-building"></i>
+                        </div>
+                        <div class="service-icon-shadow"></div>
+                        <h3 class="service-title">
+                            <a href="#">Office Relocation</a>
+                        </h3>
+                        <p class="service-text">
+                            Efficient office moves with minimal downtime for a smooth business transition.
+                        </p>
+                        <div class="service-arrow">
+                            <a href="#" class="theme-btn">Read More <span class="far fa-arrow-right"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fal fa-warehouse-alt"></i>
+                        </div>
+                        <div class="service-icon-shadow"></div>
+                        <h3 class="service-title">
+                            <a href="#">Storage Units</a>
+                        </h3>
+                        <p class="service-text">
+                            Secure, climate-controlled storage solutions for short- and long-term needs.
+                        </p>
+                        <div class="service-arrow">
+                            <a href="#" class="theme-btn">Read More <span class="far fa-arrow-right"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fal fa-city"></i>
+                        </div>
+                        <div class="service-icon-shadow"></div>
+                        <h3 class="service-title">
+                            <a href="#">Corporate Moving</a>
+                        </h3>
+                        <p class="service-text">
+                            Tailored relocation services to meet business needs with precision and care.
+                        </p>
+                        <div class="service-arrow">
+                            <a href="#" class="theme-btn">Read More <span class="far fa-arrow-right"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 		</div>
 	</div>
 	<!-- service area end -->

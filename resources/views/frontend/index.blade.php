@@ -17,14 +17,13 @@
 							</h1>
 							<p class="wow animate__animated animate__fadeInUp" data-wow-duration="1s"
 								data-wow-delay=".75s">
-								There are many variations of passages available but the majority have suffered
-								alteration in some form by injected humour or randomised words.
+								Reliable and professional moving services designed to make your relocation smooth, stress-free, and hassle-free from start to finish.
 							</p>
 							<div class="hero-btn wow animate__animated animate__fadeInUp" data-wow-duration="1s"
 								data-wow-delay="1s">
-								<a href="contact.html" class="theme-btn">Start Move<i
+								<a href="#" class="theme-btn">Start Move<i
 										class="far fa-arrow-right"></i></a>
-								<a href="about.html" class="theme-btn theme-btn2">About Us<i
+								<a href="{{ route('frontend.about') }}" class="theme-btn theme-btn2">About Us<i
 										class="far fa-arrow-right"></i></a>
 							</div>
 						</div>
@@ -45,14 +44,13 @@
 							</h1>
 							<p class="wow animate__animated animate__fadeInUp" data-wow-duration="1s"
 								data-wow-delay=".75s">
-								There are many variations of passages available but the majority have suffered
-								alteration in some form by injected humour or randomised words.
+								Reliable and professional moving services designed to make your relocation smooth, stress-free, and hassle-free from start to finish.
 							</p>
 							<div class="hero-btn wow animate__animated animate__fadeInUp" data-wow-duration="1s"
 								data-wow-delay="1s">
-								<a href="contact.html" class="theme-btn">Start Move<i
+								<a href="#" class="theme-btn">Start Move<i
 										class="far fa-arrow-right"></i></a>
-								<a href="about.html" class="theme-btn theme-btn2">About Us<i
+								<a href="{{ route('frontend.about') }}" class="theme-btn theme-btn2">About Us<i
 										class="far fa-arrow-right"></i></a>
 							</div>
 						</div>
@@ -73,14 +71,13 @@
 							</h1>
 							<p class="wow animate__animated animate__fadeInUp" data-wow-duration="1s"
 								data-wow-delay=".75s">
-								There are many variations of passages available but the majority have suffered
-								alteration in some form by injected humour or randomised words.
+								Reliable and professional moving services designed to make your relocation smooth, stress-free, and hassle-free from start to finish.
 							</p>
 							<div class="hero-btn wow animate__animated animate__fadeInUp" data-wow-duration="1s"
 								data-wow-delay="1s">
-								<a href="contact.html" class="theme-btn">Start Move<i
+								<a href="#" class="theme-btn">Start Move<i
 										class="far fa-arrow-right"></i></a>
-								<a href="about.html" class="theme-btn theme-btn2">About Us<i
+								<a href="{{ route('frontend.about') }}" class="theme-btn theme-btn2">About Us<i
 										class="far fa-arrow-right"></i></a>
 							</div>
 						</div>
@@ -106,13 +103,9 @@
 					<div class="about-right">
 						<div class="site-heading mb-3">
 							<span class="site-title-tagline">About Us</span>
-							<h2 class="site-title">Moving With Moverx Is Always Easy And Fast</h2>
+							<h2 class="site-title">Moving With Nexus Movers Is Always Easy And Fast</h2>
 						</div>
-						<p class="about-text">There are many variations of passages of Lorem Ipsum available, but
-							the majority have suffered alteration in some form, by injected humour, or randomised
-							words which don't look even slightly believable. If you are going to use a passage of
-							Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle
-							of text.</p>
+						<p class="about-text">At Nexus Movers, we provide stress-free and reliable moving services. With experienced professionals, we ensure safe packing, secure transportation, and timely delivery. Whether moving locally or long-distance, we handle every detail with care, making your relocation smooth, hassle-free, and affordable. Our customer-focused approach guarantees excellent service and personalized solutions.</p>
 						<div class="about-list-wrapper">
 							<ul class="about-list list-unstyled">
 								<li>
@@ -135,7 +128,6 @@
 								</li>
 							</ul>
 						</div>
-						<a href="about.html" class="theme-btn">Discover More <i class="far fa-arrow-right"></i></a>
 					</div>
 				</div>
 			</div>
@@ -155,8 +147,7 @@
 						<h2 class="site-title">How It Works</h2>
 						<div class="heading-divider"></div>
 						<p>
-							It is a long established fact that a reader will be distracted by the readable content
-							of a page when looking at its layout.
+							Book your move, our experts pack securely, transport safely, and deliver on time for a hassle-free moving experience.
 						</p>
 					</div>
 				</div>
@@ -169,7 +160,7 @@
 							<i class="fal fa-calendar-check"></i>
 						</div>
 						<h4>Book Your Service</h4>
-						<p>It is a long established fact that a reader will be distracted.</p>
+						<p>Easily schedule your move with our seamless booking process.</p>
 					</div>
 				</div>
 				<div class="col-lg-3 col-md-6 text-center mb-30">
@@ -179,7 +170,7 @@
 							<i class="fal fa-truck-loading"></i>
 						</div>
 						<h4>Pack And Load</h4>
-						<p>It is a long established fact that a reader will be distracted.</p>
+						<p>Our experts pack and load your belongings securely.</p>
 					</div>
 				</div>
 				<div class="col-lg-3 col-md-6 text-center mb-30">
@@ -189,7 +180,7 @@
 							<i class="fal fa-truck-container"></i>
 						</div>
 						<h4>Transportation</h4>
-						<p>It is a long established fact that a reader will be distracted.</p>
+						<p>We ensure safe and timely transportation of your items.</p>
 					</div>
 				</div>
 				<div class="col-lg-3 col-md-6 text-center mb-30">
@@ -199,7 +190,7 @@
 							<i class="fal fa-hand-holding-box"></i>
 						</div>
 						<h4>Safe Dilivery</h4>
-						<p>It is a long established fact that a reader will be distracted.</p>
+						<p>Your belongings arrive safely at your destination, stress-free.</p>
 					</div>
 				</div>
 			</div>
@@ -217,8 +208,7 @@
 						<h2 class="site-title">Best Services</h2>
 						<div class="heading-divider"></div>
 						<p>
-							It is a long established fact that a reader will be distracted by the readable content
-							of a page when looking at its layout.
+							We provide reliable, efficient moving services with professional packing, secure transport, and delivery for a smooth experience.
 						</p>
 					</div>
 				</div>
@@ -234,8 +224,7 @@
 							<a href="#">Local Moving</a>
 						</h3>
 						<p class="service-text">
-							There are many variations of passages available but the majority have suffered
-							alteration injected.
+							Safe, efficient, and hassle-free relocation within your city with expert movers.
 						</p>
 						<div class="service-arrow">
 							<a href="#" class="theme-btn">Read More <span class="far fa-arrow-right"></span></a>
@@ -252,8 +241,7 @@
 							<a href="#">Box Delivery</a>
 						</h3>
 						<p class="service-text">
-							There are many variations of passages available but the majority have suffered
-							alteration injected.
+							Get durable moving boxes delivered to your doorstep for easy packing convenience.
 						</p>
 						<div class="service-arrow">
 							<a href="#" class="theme-btn">Read More <span class="far fa-arrow-right"></span></a>
@@ -270,8 +258,7 @@
 							<a href="#">Long Distance</a>
 						</h3>
 						<p class="service-text">
-							There are many variations of passages available but the majority have suffered
-							alteration injected.
+							Reliable, secure, and timely transportation for stress-free long-distance relocations.
 						</p>
 						<div class="service-arrow">
 							<a href="#" class="theme-btn">Read More <span class="far fa-arrow-right"></span></a>
@@ -288,8 +275,7 @@
 							<a href="#">Loading & Unloading</a>
 						</h3>
 						<p class="service-text">
-							There are many variations of passages available but the majority have suffered
-							alteration injected.
+							Professional handling ensures your belongings are safely loaded and unloaded.
 						</p>
 						<div class="service-arrow">
 							<a href="#" class="theme-btn">Read More <span class="far fa-arrow-right"></span></a>
@@ -311,8 +297,7 @@
 						<h2 class="site-title">Photo Gallery</h2>
 						<div class="heading-divider"></div>
 						<p>
-							It is a long established fact that a reader will be distracted by the readable content
-							of a page when looking at its layout.
+							Explore our photo gallery to see our professional movers in action, carefully handling, packing, and transporting belongings with utmost care.
 						</p>
 					</div>
 				</div>
