@@ -38,9 +38,9 @@
 
     <!-- header area -->
     <header class="home-3 header">
-
+        
         <!-- header top -->
-        <!-- <div class="header-top">
+        <div class="header-top">
             <div class="container">
                 <div class="header-top-wrapper">
                     <div class="header-top-left">
@@ -62,8 +62,8 @@
                     </div>
                 </div>
             </div>
-        </div> -->
-
+        </div>
+    
         <div class="main-navigation">
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
@@ -79,60 +79,12 @@
                     </div>
                     <div class="collapse navbar-collapse" id="main_nav">
                         <ul class="navbar-nav">
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown">Home</a>
-                                <ul class="dropdown-menu fade-up">
-                                    <li><a class="dropdown-item" href="index-2.html">Home Page 01</a></li>
-                                    <li><a class="dropdown-item" href="index-3.html">Home Page 02</a></li>
-                                    <li><a class="dropdown-item" href="index-4.html">Home Page 03</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item"><a class="nav-link" href="about.html"> About </a></li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Pages</a>
-                                <ul class="dropdown-menu fade-up">
-                                    <li><a class="dropdown-item" href="about.html">About Us</a></li>
-                                    <li><a class="dropdown-item" href="team.html">Team Members</a></li>
-                                    <li><a class="dropdown-item" href="pricing.html">Our Pricing</a></li>
-                                    <li><a class="dropdown-item" href="contact.html">Contact Us</a></li>
-                                    <li><a class="dropdown-item" href="testimonial.html">Testimonials</a></li>
-                                    <li><a class="dropdown-item" href="faq.html">Faq</a></li>
-                                    <li><a class="dropdown-item" href="login.html">Login</a></li>
-                                    <li><a class="dropdown-item" href="register.html">Register</a></li>
-                                    <li><a class="dropdown-item" href="forgot-password.html">Forgot Password</a></li>
-                                    <li><a class="dropdown-item" href="404.html">404 Error</a></li>
-                                    <li><a class="dropdown-item" href="coming-soon.html">Coming Soon</a></li>
-                                    <li><a class="dropdown-item" href="terms.html">Terms Of Service</a></li>
-                                    <li><a class="dropdown-item" href="privacy.html">Privacy Policy</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Service</a>
-                                <ul class="dropdown-menu fade-up">
-                                    <li><a class="dropdown-item" href="service.html">Services</a></li>
-                                    <li><a class="dropdown-item" href="service-single.html">Service Details</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Feature</a>
-                                <ul class="dropdown-menu fade-up">
-                                    <li><a class="dropdown-item" href="request-quote.html">Request A Quote</a></li>
-                                    <li><a class="dropdown-item" href="global-location.html">Global Location</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Blog</a>
-                                <ul class="dropdown-menu fade-up">
-                                    <li><a class="dropdown-item" href="blog.html">Blog</a></li>
-                                    <li><a class="dropdown-item" href="blog-single.html">Blog Single</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#"> Home </a></li>
+                            <li class="nav-item"><a class="nav-link" href="#"> About </a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
                         </ul>
                         <div class="header-nav-right">
-                            <div class="header-nav-search">
-                                <a href="#" class="search-box-outer"><i class="far fa-search"></i></a>
-                            </div>
                             <div class="header-btn">
                                 <a href="#" class="theme-btn">GET QUOTE<i class="far fa-arrow-right"></i></a>
                             </div>
@@ -167,7 +119,7 @@
                     <div class="col-md-6 col-lg-4">
                         <div class="footer-widget-box about-us">
                             <a href="#" class="footer-logo">
-                                <img src="{{ asset('frontend-assets/img/logo/logo-light.png') }}" alt="">
+                                <img src="{{ asset('frontend-assets/img/logo/nexus-logo-light.png') }}" alt="">
                             </a>
                             <p class="mb-20">
                                 We are many variations of passages available but the majority have suffered alteration
@@ -181,7 +133,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-3">
+                    <div class="col-md-6 col-lg-4">
                         <div class="footer-widget-box">
                             <h4 class="footer-widget-title">Contact Us</h4>
                             <ul class="footer-contact">
@@ -194,7 +146,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-2">
+                    <div class="col-md-6 col-lg-4">
                         <div class="footer-widget-box list">
                             <h4 class="footer-widget-title">Quick Links</h4>
                             <ul class="footer-list">
@@ -204,22 +156,6 @@
                                 <li><a href="#"><i class="fas fa-caret-right"></i> Privacy policy</a></li>
                                 <li><a href="#"><i class="fas fa-caret-right"></i> Our Services</a></li>
                             </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="footer-widget-box list">
-                            <h4 class="footer-widget-title">Newsletter</h4>
-                            <div class="footer-newsletter">
-                                <p>Subscribe Our Newsletter To Get Latest Update And News</p>
-                                <div class="subscribe-form">
-                                    <form action="#">
-                                        <input type="email" class="form-control" placeholder="Your Email">
-                                        <button class="theme-btn" type="submit">
-                                            <i class="far fa-paper-plane"></i> Subscribe Now
-                                        </button>
-                                    </form>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>

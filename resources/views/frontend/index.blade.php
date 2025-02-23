@@ -4,6 +4,34 @@
 <main class="home-3 main">
 	<!-- hero slider -->
 	<div class="hero-section hero-slider owl-carousel owl-theme">
+		<div class="hero-single hero-single-ani" style="background-image: url('{{ asset('frontend-assets/img/slider/slider-2.jpg') }}')">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-md-7 col-lg-7">
+						<div class="hero-content">
+							<h6 class="hero-sub-title wow animate__animated animate__fadeInUp"
+								data-wow-duration="1s" data-wow-delay=".25s">Smooth Moving For You</h6>
+							<h1 class="hero-title wow animate__animated animate__fadeInUp" data-wow-duration="1s"
+								data-wow-delay=".50s">
+								Moving For Every Customer With Care
+							</h1>
+							<p class="wow animate__animated animate__fadeInUp" data-wow-duration="1s"
+								data-wow-delay=".75s">
+								There are many variations of passages available but the majority have suffered
+								alteration in some form by injected humour or randomised words.
+							</p>
+							<div class="hero-btn wow animate__animated animate__fadeInUp" data-wow-duration="1s"
+								data-wow-delay="1s">
+								<a href="contact.html" class="theme-btn">Start Move<i
+										class="far fa-arrow-right"></i></a>
+								<a href="about.html" class="theme-btn theme-btn2">About Us<i
+										class="far fa-arrow-right"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 		<div class="hero-single hero-single-ani" style="background-image: url('{{ asset('frontend-assets/img/slider/slider-3.jpg') }}')">
 			<div class="container">
 				<div class="row align-items-center">
@@ -60,39 +88,8 @@
 				</div>
 			</div>
 		</div>
-		<div class="hero-single hero-single-ani" style="background-image: url('{{ asset('frontend-assets/img/slider/slider-2.jpg') }}')">
-			<div class="container">
-				<div class="row align-items-center">
-					<div class="col-md-7 col-lg-7">
-						<div class="hero-content">
-							<h6 class="hero-sub-title wow animate__animated animate__fadeInUp"
-								data-wow-duration="1s" data-wow-delay=".25s">Smooth Moving For You</h6>
-							<h1 class="hero-title wow animate__animated animate__fadeInUp" data-wow-duration="1s"
-								data-wow-delay=".50s">
-								Moving For Every Customer With Care
-							</h1>
-							<p class="wow animate__animated animate__fadeInUp" data-wow-duration="1s"
-								data-wow-delay=".75s">
-								There are many variations of passages available but the majority have suffered
-								alteration in some form by injected humour or randomised words.
-							</p>
-							<div class="hero-btn wow animate__animated animate__fadeInUp" data-wow-duration="1s"
-								data-wow-delay="1s">
-								<a href="contact.html" class="theme-btn">Start Move<i
-										class="far fa-arrow-right"></i></a>
-								<a href="about.html" class="theme-btn theme-btn2">About Us<i
-										class="far fa-arrow-right"></i></a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
 	</div>
 	<!-- hero slider end -->
-
-
-
 
 	<!-- about area -->
 	<div class="about-area py-120">
@@ -101,7 +98,7 @@
 				<div class="col-lg-6">
 					<div class="about-left">
 						<div class="about-img">
-							<img src="{{ asset('frontend-assets/img/about/about.jpg') }}" alt="">
+							<img src="{{ asset('frontend-assets/img/about/about.png') }}" alt="">
 						</div>
 					</div>
 				</div>
@@ -215,8 +212,6 @@
 
 	<!-- service area -->
 	<div class="service-area bg py-120">
-		<div class="shape-1"></div>
-		<div class="shape-2"></div>
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6 mx-auto">
@@ -308,28 +303,7 @@
 		</div>
 	</div>
 	<!-- service area end -->
-
-
-
-	<!-- video area -->
-	<div class="video-area" style="background-image: url(assets/img/video/video.jpg);">
-		<div class="container">
-			<div class="row align-items-center">
-				<div class="col-lg-12">
-					<div class="video-wrapper">
-						<a class="play-btn popup-youtube" href="https://www.youtube.com/watch?v=ckHzmP1evNU">
-							<i class="fas fa-play"></i>
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- video area end -->
-
-
-
-
+	 
 	<!-- gallery area -->
 	<div class="gallery-area py-120">
 		<div class="container">
@@ -383,105 +357,10 @@
 						<a class="popup-img" href="{{ asset('frontend-assets/img/gallery/gallery-6.jpg') }}"><i class="far fa-plus"></i></a>
 					</div>
 				</div>
-
-
-			</div>
-			<div class="text-center mt-5">
-				<a href="#" class="theme-btn">Load More <i class="far fa-sync"></i></a>
 			</div>
 		</div>
 	</div>
 	<!-- gallery area end -->
-
-
-
-	<!-- quote area -->
-	<div class="quote-area pb-120">
-		<div class="container-fluid p-0">
-			<div class="quote-wrapper">
-				<div class="row g-0">
-					<div class="col-lg-6">
-						<div class="quote-left">
-							<div class="quote-header">
-								<span class="site-title-tagline text-white">Book Us Now</span>
-								<h2 class="site-title text-white">Get Your Free Quote Now</h2>
-								<p class="text-white mt-4">
-									There are many variations of passages of Lorem Ipsum available, but the majority
-									have suffered alteration in some form, by injected humour, or randomised words
-									which don't look even slightly believable.
-								</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-6">
-						<div class="quote-content">
-							<form action="#">
-								<div class="row">
-									<div class="col-md-6 col-lg-6">
-										<div class="form-group">
-											<input type="text" name="name" class="form-control"
-												placeholder="Your Name">
-										</div>
-									</div>
-									<div class="col-md-6 col-lg-6">
-										<div class="form-group">
-											<input type="email" name="email" class="form-control"
-												placeholder="Email Address">
-										</div>
-									</div>
-									<div class="col-md-6 col-lg-6">
-										<div class="form-group">
-											<input type="text" name="phone" class="form-control"
-												placeholder="Your Phone">
-										</div>
-									</div>
-									<div class="col-md-6 col-lg-6">
-										<div class="form-group">
-											<select class="form-select">
-												<option value="">Moving Type</option>
-												<option value="1">Local Moving</option>
-												<option value="2">Long Distance</option>
-												<option value="3">Box Delivery</option>
-												<option value="4">International</option>
-											</select>
-										</div>
-									</div>
-									<div class="col-md-6 col-lg-4">
-										<div class="form-group">
-											<input type="text" name="date" class="form-control"
-												placeholder="Date Ex: DD/MM/YY">
-										</div>
-									</div>
-									<div class="col-md-6 col-lg-4">
-										<div class="form-group">
-											<input type="text" name="text" class="form-control"
-												placeholder="From Ex: City, State">
-										</div>
-									</div>
-									<div class="col-md-6 col-lg-4">
-										<div class="form-group">
-											<input type="text" name="text" class="form-control"
-												placeholder="To Ex: City, State">
-										</div>
-									</div>
-								</div>
-
-								<div class="form-group">
-									<textarea name="message" class="form-control" placeholder="Your Message"
-										rows="4"></textarea>
-								</div>
-								<button class="theme-btn"><i class="far fa-bookmark"></i> Send Book Request</button>
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- quote area end -->
-
-
-
 
 	<!-- faq area -->
 	<div class="faq-area pb-120">
@@ -559,9 +438,6 @@
 		</div>
 	</div>
 	<!-- faq area end -->
-
-
-
 
 	<!-- blog-area -->
 	<div class="blog-area">
@@ -641,25 +517,5 @@
 		</div>
 	</div>
 	<!-- blog-area end -->
-
-
-
-	<!-- partner area -->
-	<div class="partner-area pt-70 pb-70">
-		<div class="container">
-			<div class="partner-wrapper partner-slider owl-carousel owl-theme">
-				<img src="{{ asset('frontend-assets/img/partner/01.jpg') }}" alt="thumb">
-				<img src="{{ asset('frontend-assets/img/partner/02.jpg') }}" alt="thumb">
-				<img src="{{ asset('frontend-assets/img/partner/03.jpg') }}" alt="thumb">
-				<img src="{{ asset('frontend-assets/img/partner/04.jpg') }}" alt="thumb">
-				<img src="{{ asset('frontend-assets/img/partner/01.jpg') }}" alt="thumb">
-				<img src="{{ asset('frontend-assets/img/partner/02.jpg') }}" alt="thumb">
-				<img src="{{ asset('frontend-assets/img/partner/03.jpg') }}" alt="thumb">
-			</div>
-		</div>
-	</div>
-	<!-- partner area end -->
-
-
 </main>
 @endsection
