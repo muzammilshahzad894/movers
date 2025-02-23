@@ -24,4 +24,19 @@ class FrontendController extends Controller
     {
         return view('frontend.contact');
     }
+    
+    public function faqs()
+    {
+        return view('frontend.faqs');
+    }
+    
+    public function terms()
+    {
+        return view('frontend.terms');
+    }
+    
+    public function privacyPolicy()
+    {
+        return view('frontend.privacy-policy');
+    }
 }

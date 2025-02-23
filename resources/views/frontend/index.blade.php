@@ -207,9 +207,6 @@
 	</div>
 	<!-- process area end -->
 
-
-
-
 	<!-- service area -->
 	<div class="service-area bg py-120">
 		<div class="container">

@@ -6,5 +6,8 @@ use App\Http\Controllers\frontend\JobController;
 
 Route::get('/', [FrontendController::class, 'index'])->name('frontend.index');
 Route::get('/about', [FrontendController::class, 'about'])->name('frontend.about');
+Route::get('/faqs', [FrontendController::class, 'faqs'])->name('frontend.faqs');
+Route::get('/terms-and-conditions', [FrontendController::class, 'terms'])->name('frontend.terms');
+Route::get('/privacy-policy', [FrontendController::class, 'privacyPolicy'])->name('frontend.privacyPolicy');
 Route::get('/contact', [FrontendController::class, 'contact'])->name('frontend.contact');
 Route::post('/contact', [FrontendController::class, 'contactPost'])->name('frontend.contactPost');

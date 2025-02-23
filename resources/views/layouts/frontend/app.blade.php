@@ -172,7 +172,6 @@
                     </div>
                     <div class="col-lg-6 align-self-center">
                         <ul class="footer-menu">
-                            <li><a href="#">Support</a></li>
                             <li><a href="#">Terms Of Services</a></li>
                             <li><a href="#">Privacy Policy</a></li>
                         </ul>
