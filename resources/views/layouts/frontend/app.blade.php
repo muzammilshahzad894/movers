@@ -68,7 +68,7 @@
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
                     <a class="navbar-brand" href="{{ route('frontend.index') }}">
-                        <img src="{{ asset('frontend-assets/img/logo/nexus-logo.png') }}" alt="logo">
+                        <img src="{{ asset('frontend-assets/img/logo/logo.png') }}" alt="logo">
                     </a>
                     <div class="mobile-menu-right">
                         <a href="#" class="mobile-search-btn search-box-outer"><i class="far fa-search"></i></a>
@@ -114,7 +114,7 @@
                     <div class="col-md-6 col-lg-4">
                         <div class="footer-widget-box about-us">
                             <a href="#" class="footer-logo">
-                                <img src="{{ asset('frontend-assets/img/logo/nexus-logo-light.png') }}" alt="">
+                                <img src="{{ asset('frontend-assets/img/logo/logo-light.png') }}" alt="">
                             </a>
                             <p class="mb-20">
                                 Looking for a moving company you can trust? We offer safe, efficient, and budget-friendly moving solutions tailored to your needs. Your satisfaction is our priority!

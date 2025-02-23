@@ -4317,4 +4317,8 @@ home 3
   display: none;
 }
 
+.contact-area form #submit-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
 

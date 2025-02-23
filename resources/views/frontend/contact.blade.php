@@ -26,30 +26,56 @@
                                 <h2>Get In Touch</h2>
                                 <p>Feel free to contact us, we are here to help you.</p>
                             </div>
-                            <form method="post" action="https://live.themewild.com/moverx/assets/php/contact.php" id="contact-form">
+                            <form method="post" action="{{ route('frontend.contactPost') }}" enctype="multipart/form-data" onsubmit="document.getElementById('submit-btn').disabled = true; document.getElementById('submit-btn').innerHTML = 'Sending...';">
+                            @csrf
+                            <div class="row">
+                                <div class="col-12">
+                                    @include('partials.messages')
+                                    @if($errors->any())
+                                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                            <ul>
+                                                @foreach ($errors->all() as $error)
+                                                    <li>{{ $error }}</li>
+                                                @endforeach
+                                            </ul>
+                                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                        </div>
+                                    @endif
+                                </div>
+                            </div>
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <input type="text" class="form-control" name="name"
-                                                placeholder="Your Name" required>
+                                                placeholder="Your Name *" value="{{ old('name') }}" required>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <input type="email" class="form-control" name="email"
-                                                placeholder="Your Email" required>
+                                                placeholder="Your Email *" value="{{ old('email') }}" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="phone"
+                                                placeholder="Your Phone *" value="{{ old('phone') }}" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="subject"
+                                                placeholder="Your Subject *" value="{{ old('subject') }}" required>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" name="subject"
-                                        placeholder="Your Subject" required>
-                                </div>
-                                <div class="form-group">
                                     <textarea name="message" cols="30" rows="5" class="form-control"
-                                        placeholder="Write Your Message"></textarea>
+                                        placeholder="Write Your Message *" required>{{ old('message') }}</textarea>
                                 </div>
-                                <button type="submit" class="theme-btn"> <i class="far fa-paper-plane"></i> Send
+                                <button type="submit" class="theme-btn" id="submit-btn"> <i class="far fa-paper-plane"></i> Send
                                     Message</button>
                                 <div class="col-md-12 mt-3">
                                     <div class="form-messege text-success"></div>
@@ -66,7 +92,7 @@
                                 </div>
                                 <div class="contact-info-content">
                                     <h5>Office Address</h5>
-                                    <p>1234 Elm Street, Springfield, AUS</p>
+                                    <p>1234 Elm Street, AUS</p>
                                 </div>
                             </div>
                             <div class="contact-info">
