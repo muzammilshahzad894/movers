@@ -89,6 +89,9 @@
                                 <a class="nav-link {{ request()->routeIs('frontend.contact') ? 'active' : '' }}" href="{{ route('frontend.contact') }}">Contact</a>
                             </li>
                             <li class="nav-item">
+                                <a class="nav-link {{ request()->routeIs('frontend.faqs') ? 'active' : '' }}" href="{{ route('frontend.faqs') }}">FAQ's</a>
+                            </li>
+                            <li class="nav-item">
                                 <a class="nav-link" href="#">Services</a>
                             </li>
                         </ul>
