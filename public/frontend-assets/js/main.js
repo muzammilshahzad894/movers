@@ -1,10 +1,3 @@
-/* =====================================================
-Template Name   : Moverx
-Description     : Moving Company HTML5 Template
-Author          : Themesland
-Version         : 1.3
-=======================================================*/
-
 (function ($) {
     "use strict";
 
