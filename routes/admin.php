@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\admin\DashboardController;
 use App\Http\Controllers\admin\AdminLoginController;
+use App\Http\Controllers\admin\ProfileController;
 
 Route::get('/', function () {
     return redirect()->route('admin.login');
@@ -20,4 +21,6 @@ Route::middleware(['admin'])->group(function () {
     Route::get('/admin/logout', [AdminLoginController::class, 'logout'])->name('admin.logout');
 
     Route::get('/admin/dashboard', [DashboardController::class, 'dashboard'])->name('admin.dashboard');
+    Route::get('/profile', [ProfileController::class, 'index'])->name('admin.profile');
+    Route::post('/profile', [ProfileController::class, 'update'])->name('admin.profile.update');
 });
