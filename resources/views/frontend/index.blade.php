@@ -321,24 +321,6 @@
 						<a class="popup-img" href="{{ asset('frontend-assets/img/gallery/truck-3.jpg') }}"><i class="far fa-plus"></i></a>
 					</div>
 				</div>
-				<div class="col-md-4">
-					<div class="gallery-item">
-						<img src="{{ asset('frontend-assets/img/gallery/truck-3.jpg') }}" alt="">
-						<a class="popup-img" href="{{ asset('frontend-assets/img/gallery/truck-3.jpg') }}"><i class="far fa-plus"></i></a>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="gallery-item">
-						<img src="{{ asset('frontend-assets/img/gallery/truck-2.jpg') }}" alt="">
-						<a class="popup-img" href="{{ asset('frontend-assets/img/gallery/truck-2.jpg') }}"><i class="far fa-plus"></i></a>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="gallery-item">
-						<img src="{{ asset('frontend-assets/img/gallery/truck-1.jpg') }}" alt="">
-						<a class="popup-img" href="{{ asset('frontend-assets/img/gallery/truck-1.jpg') }}"><i class="far fa-plus"></i></a>
-					</div>
-				</div>
 			</div>
 		</div>
 	</div>
