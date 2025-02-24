@@ -92,7 +92,7 @@
                                 </div>
                                 <div class="contact-info-content">
                                     <h5>Office Address</h5>
-                                    <p>1234 Elm Street, AUS</p>
+                                    <p>4 season way craigieburn</p>
                                 </div>
                             </div>
                             <div class="contact-info">
@@ -101,7 +101,7 @@
                                 </div>
                                 <div class="contact-info-content">
                                     <h5>Call Us</h5>
-                                    <p>+1 123 456 7898</p>
+                                    <p>+61400982424</p>
                                 </div>
                             </div>
                             <div class="contact-info">
@@ -111,17 +111,8 @@
                                 <div class="contact-info-content">
                                     <h5>Email Us</h5>
                                     <p>
-                                        <a href="#">[email&#160;protected]</a>
+                                        <a href="mailto:info@nexusmovers.com.au">info@nexusmovers.com.au</a>
                                     </p>
-                                </div>
-                            </div>
-                            <div class="contact-info">
-                                <div class="contact-info-icon">
-                                    <i class="fal fa-clock"></i>
-                                </div>
-                                <div class="contact-info-content">
-                                    <h5>Office Open</h5>
-                                    <p>Mon - Fri (08AM - 10PM)</p>
                                 </div>
                             </div>
                         </div>

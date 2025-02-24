@@ -297,7 +297,7 @@
 						<h2 class="site-title">Photo Gallery</h2>
 						<div class="heading-divider"></div>
 						<p>
-							Explore our photo gallery to see our professional movers in action, carefully handling, packing, and transporting belongings with utmost care.
+							Explore our photo gallery to see our fleet of trucks in action, ensuring safe and efficient transportation of belongings with utmost care. 
 						</p>
 					</div>
 				</div>
@@ -305,38 +305,38 @@
 			<div class="row popup-gallery" data-masonry='{"percentPosition": true }'>
 				<div class="col-md-4">
 					<div class="gallery-item">
-						<img src="{{ asset('frontend-assets/img/gallery/gallery-1.jpg') }}" alt="">
-						<a class="popup-img" href="{{ asset('frontend-assets/img/gallery/gallery-1.jpg') }}"><i class="far fa-plus"></i></a>
+						<img src="{{ asset('frontend-assets/img/gallery/truck-1.jpg') }}" alt="">
+						<a class="popup-img" href="{{ asset('frontend-assets/img/gallery/truck-1.jpg') }}"><i class="far fa-plus"></i></a>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="gallery-item">
-						<img src="{{ asset('frontend-assets/img/gallery/gallery-2.jpg') }}" alt="">
-						<a class="popup-img" href="{{ asset('frontend-assets/img/gallery/gallery-2.jpg') }}"><i class="far fa-plus"></i></a>
+						<img src="{{ asset('frontend-assets/img/gallery/truck-2.jpg') }}" alt="">
+						<a class="popup-img" href="{{ asset('frontend-assets/img/gallery/truck-2.jpg') }}"><i class="far fa-plus"></i></a>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="gallery-item">
-						<img src="{{ asset('frontend-assets/img/gallery/gallery-3.jpg') }}" alt="">
-						<a class="popup-img" href="{{ asset('frontend-assets/img/gallery/gallery-3.jpg') }}"><i class="far fa-plus"></i></a>
+						<img src="{{ asset('frontend-assets/img/gallery/truck-3.jpg') }}" alt="">
+						<a class="popup-img" href="{{ asset('frontend-assets/img/gallery/truck-3.jpg') }}"><i class="far fa-plus"></i></a>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="gallery-item">
-						<img src="{{ asset('frontend-assets/img/gallery/gallery-4.jpg') }}" alt="">
-						<a class="popup-img" href="{{ asset('frontend-assets/img/gallery/gallery-4.jpg') }}"><i class="far fa-plus"></i></a>
+						<img src="{{ asset('frontend-assets/img/gallery/truck-3.jpg') }}" alt="">
+						<a class="popup-img" href="{{ asset('frontend-assets/img/gallery/truck-3.jpg') }}"><i class="far fa-plus"></i></a>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="gallery-item">
-						<img src="{{ asset('frontend-assets/img/gallery/gallery-5.jpg') }}" alt="">
-						<a class="popup-img" href="{{ asset('frontend-assets/img/gallery/gallery-5.jpg') }}"><i class="far fa-plus"></i></a>
+						<img src="{{ asset('frontend-assets/img/gallery/truck-2.jpg') }}" alt="">
+						<a class="popup-img" href="{{ asset('frontend-assets/img/gallery/truck-2.jpg') }}"><i class="far fa-plus"></i></a>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="gallery-item">
-						<img src="{{ asset('frontend-assets/img/gallery/gallery-6.jpg') }}" alt="">
-						<a class="popup-img" href="{{ asset('frontend-assets/img/gallery/gallery-6.jpg') }}"><i class="far fa-plus"></i></a>
+						<img src="{{ asset('frontend-assets/img/gallery/truck-1.jpg') }}" alt="">
+						<a class="popup-img" href="{{ asset('frontend-assets/img/gallery/truck-1.jpg') }}"><i class="far fa-plus"></i></a>
 					</div>
 				</div>
 			</div>

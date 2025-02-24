@@ -46,8 +46,7 @@
                     <div class="header-top-left">
                         <div class="header-top-contact">
                             <ul>
-                                <li><a href="#"><i class="far fa-map-marker-alt"></i>1234 Elm Street, Springfield, AUS</a></li>
-                                <li><a href="#"><i class="far fa-clock"></i>Mon - Fri (08AM - 10PM)</a></li>
+                                <li><a href="#"><i class="far fa-map-marker-alt"></i>4 season way craigieburn</a></li>
                             </ul>
                         </div>
                     </div>
@@ -133,12 +132,12 @@
                         <div class="footer-widget-box">
                             <h4 class="footer-widget-title">Contact Us</h4>
                             <ul class="footer-contact">
-                                <li><i class="far fa-map-marker-alt"></i>1234 Elm Street, Springfield, AUS</li>
-                                <li><a href="tel:+11111111111"><i class="far fa-phone"></i>+1 123 456 7898</a></li>
-                                <li><a href="https://live.themewild.com/cdn-cgi/l/email-protection#771e19111837120f161a071b125914181a"><i
-                                            class="far fa-envelope"></i><span class="__cf_email__" data-cfemail="6a03040c052a0f120b071a060f44090507">[email&#160;protected]</span></a>
+                                <li><i class="far fa-map-marker-alt"></i>4 season way craigieburn</li>
+                                <li><a href="tel:+61400982424"><i class="far fa-phone"></i>+61400982424</a></li>
+                                <li>
+                                    <a href="mailto:info@nexusmovers.com.au">
+                                        <i class="far fa-envelope"></i><span class="">info@nexusmovers.com.au</span></a>
                                 </li>
-                                <li><i class="far fa-clock"></i>Mon - Fri (08AM - 10PM)</li>
                             </ul>
                         </div>
                     </div>
