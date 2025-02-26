@@ -189,12 +189,11 @@
     });
 
 
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 50) {
-            $('.navbar').addClass("fixed-top");
-        } else {
-            $('.navbar').removeClass("fixed-top");
-        }
+    $(window).on("scroll", function () {
+        const hasScrolled = $(this).scrollTop() > 50;
+        const isGetQuotePage = window.location.href.includes("get-quote");
+        
+        $(".navbar").toggleClass("fixed-top", hasScrolled && !isGetQuotePage);
     });
 
 

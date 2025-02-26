@@ -47,6 +47,11 @@ class FrontendController extends Controller
         return view('frontend.privacy-policy');
     }
     
+    public function services()
+    {
+        return view('frontend.services');
+    }
+    
     public function contactPost(Request $request)
     {
         try {

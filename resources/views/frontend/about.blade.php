@@ -124,7 +124,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="row g-1">
+			<div class="row g-3">
                 <div class="col-md-6 col-lg-3">
 					<div class="service-item">
 						<div class="service-icon">
@@ -152,7 +152,7 @@
 							<a href="#">Box Delivery</a>
 						</h3>
 						<p class="service-text">
-							Get durable moving boxes delivered to your doorstep for easy packing convenience.
+							Get durable moving boxes delivered to your doorstep for easy packing.
 						</p>
 						<div class="service-arrow">
 							<a href="#" class="theme-btn">Read More <span class="far fa-arrow-right"></span></a>
@@ -169,7 +169,7 @@
 							<a href="#">Long Distance</a>
 						</h3>
 						<p class="service-text">
-							Reliable, secure, and timely transportation for stress-free long-distance relocations.
+							Reliable, secure, and timely transportation for stress-free long-distance.
 						</p>
 						<div class="service-arrow">
 							<a href="#" class="theme-btn">Read More <span class="far fa-arrow-right"></span></a>
@@ -203,7 +203,7 @@
                             <a href="#">International Moving</a>
                         </h3>
                         <p class="service-text">
-                            Seamless and secure global relocation with expert customs handling and logistics.
+                            Seamless and secure global relocation with expert customs handling.
                         </p>
                         <div class="service-arrow">
                             <a href="#" class="theme-btn">Read More <span class="far fa-arrow-right"></span></a>

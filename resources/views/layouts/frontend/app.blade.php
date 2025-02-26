@@ -90,12 +90,12 @@
                                 <a class="nav-link {{ request()->routeIs('frontend.faqs') ? 'active' : '' }}" href="{{ route('frontend.faqs') }}">FAQ's</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Services</a>
+                                <a class="nav-link {{ request()->routeIs('frontend.services') ? 'active' : '' }}" href="{{ route('frontend.services') }}">Services</a>
                             </li>
                         </ul>
                         <div class="header-nav-right">
                             <div class="header-btn">
-                                <a href="#" class="theme-btn">GET QUOTE<i class="far fa-arrow-right"></i></a>
+                                <a href="{{ route('frontend.getQuote', ['step' => 'locations']) }}" class="theme-btn">GET QUOTE<i class="far fa-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -149,7 +149,7 @@
                                 <li><a href="{{ route('frontend.faqs') }}"><i class="fas fa-caret-right"></i> FAQ's</a></li>
                                 <li><a href="{{ route('frontend.terms') }}"><i class="fas fa-caret-right"></i> Terms Of Service</a></li>
                                 <li><a href="{{ route('frontend.privacyPolicy') }}"><i class="fas fa-caret-right"></i> Privacy policy</a></li>
-                                <li><a href="#"><i class="fas fa-caret-right"></i> Our Services</a></li>
+                                <li><a href="{{ route('frontend.services') }}"><i class="fas fa-caret-right"></i> Our Services</a></li>
                             </ul>
                         </div>
                     </div>
@@ -195,6 +195,8 @@
     <script src="{{ asset('frontend-assets/js/masonry.pkgd.min.js') }}"></script>
     <script src="{{ asset('frontend-assets/js/wow.min.js') }}"></script>
     <script src="{{ asset('frontend-assets/js/main.js') }}"></script>
+    
+    @yield('javascript')
 </body>
 
 </html>
