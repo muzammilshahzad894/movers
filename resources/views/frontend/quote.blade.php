@@ -395,6 +395,11 @@
     .fw-500 {
         font-weight: 500;
     }
+    
+    .help-text-style {
+        font-size: 15px;
+        color: rgba(0, 0, 0, .85098);
+    }
 </style>
 @endsection
 
@@ -818,7 +823,7 @@
                                                         Commercial
                                                     </label>
                                                 </div>
-                                                <div id="dropoff-house-levels">
+                                                <div id="dropoff-house-sub-levels">
                                                     <p class="property-type-text mt-4">Number of levels in this house?</p>
                                                     <div class="grid-three-one mt-2">
                                                         <label class="form-check form-check-inline" for="dropoff-house-single">
@@ -833,6 +838,214 @@
                                                             <input class="form-check-input" type="radio" name="dropoff-house-levels" value="triple" id="dropoff-house-triple">
                                                             Triple
                                                         </label>
+                                                    </div>
+                                                </div>
+                                                <div id="dropoff-unit-sub-levels" class="d-none">
+                                                    <div>
+                                                        <p class="property-type-text mt-4">Are stairs or a lift required to reach your unit?</p>
+                                                        <div class="grid-three-one mt-2">
+                                                            <label class="form-check form-check-inline" for="dropoff-no-stairs-lift">
+                                                                <input class="form-check-input" type="radio" name="dropoff-stairs-or-lift" value="no" id="dropoff-no-stairs-lift">
+                                                                No
+                                                            </label>
+                                                            <label class="form-check form-check-inline" for="dropoff-stairs">
+                                                                <input class="form-check-input" type="radio" name="dropoff-stairs-or-lift" value="stairs" id="dropoff-stairs">
+                                                                Yes - Stairs
+                                                            </label>
+                                                            <label class="form-check form-check-inline" for="dropoff-lift">
+                                                                <input class="form-check-input" type="radio" name="dropoff-stairs-or-lift" value="lift" id="dropoff-lift">
+                                                                Yes - Lift
+                                                            </label>
+                                                        </div>
+                                                        <div id="dropoff-lift-stairs-sub-levels" class="d-none">
+                                                            <div id="dropoff-flight-stairs">
+                                                                <p class="property-type-text mt-4">How many flights of stairs?</p>
+                                                                <div class="grid-three-one mt-2">
+                                                                    <label class="form-check form-check-inline" for="dropoff-stairs-one">
+                                                                        <input class="form-check-input" type="radio" name="dropoff-stairs-or-lift-count" value="one" id="dropoff-stairs-one">
+                                                                        1 Flight
+                                                                    </label>
+                                                                    <label class="form-check form-check-inline" for="dropoff-stairs-two">
+                                                                        <input class="form-check-input" type="radio" name="dropoff-stairs-or-lift-count" value="two" id="dropoff-stairs-two">
+                                                                        2 Flights
+                                                                    </label>
+                                                                    <label class="form-check form-check-inline" for="dropoff-stairs-three">
+                                                                        <input class="form-check-input" type="radio" name="dropoff-stairs-or-lift-count" value="three" id="dropoff-stairs-three">
+                                                                        3 Flights
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                            <div id="dropoff-flight" class="d-none">
+                                                                <div class="alert alert-info mt-4 d-flex gap-2" role="alert">
+                                                                    <div><i class="fas fa-info-circle"></i></div>
+                                                                    <div>
+                                                                        <p class="fw-500">Do you have a lift booking?</p>
+                                                                        <p class="fs-15 lh-22 mt-2">If you have a lift booking or set time to access your lift, please tell us in the comments below.</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <p class="property-type-text mt-4">Are all the rooms on the same level inside your unit?</p>
+                                                        <div class="grid-one-one mt-2">
+                                                            <label class="form-check form-check-inline" for="dropoff-unit-single-level">
+                                                                <input class="form-check-input" type="radio" name="dropoff-unit-levels" value="single" id="dropoff-unit-single-level">
+                                                                Yes, all rooms are on the same level
+                                                            </label>
+                                                            <label class="form-check form-check-inline" for="dropoff-unit-multiple-levels">
+                                                                <input class="form-check-input" type="radio" name="dropoff-unit-levels" value="multiple" id="dropoff-unit-multiple-levels">
+                                                                No, there’s multiple levels inside my unit
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div id="dropoff-townhouse-sub-levels" class="d-none">
+                                                    <p class="property-type-text mt-4">Number of levels in this townhouse?</p>
+                                                    <div class="grid-three-one mt-2">
+                                                        <label class="form-check form-check-inline" for="dropoff-townhouse-single">
+                                                            <input class="form-check-input" type="radio" name="dropoff-townhouse-levels" value="single" id="dropoff-townhouse-single">
+                                                            Single
+                                                        </label>
+                                                        <label class="form-check form-check-inline" for="dropoff-townhouse-double">
+                                                            <input class="form-check-input" type="radio" name="dropoff-townhouse-levels" value="double" id="dropoff-townhouse-double">
+                                                            Double
+                                                        </label>
+                                                        <label class="form-check form-check-inline" for="dropoff-townhouse-triple">
+                                                            <input class="form-check-input" type="radio" name="dropoff-townhouse-levels" value="triple" id="dropoff-townhouse-triple">
+                                                            Triple
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div id="dropoff-apartment-sub-levels" class="d-none">
+                                                    <p class="property-type-text mt-4">Are stairs or a lift required to reach your apartment?</p>
+                                                    <div class="grid-three-one mt-2">
+                                                        <label class="form-check form-check-inline" for="dropoff-apartment-no-stairs-lift">
+                                                            <input class="form-check-input" type="radio" name="dropoff-apartment-stairs-or-lift" value="no" id="dropoff-apartment-no-stairs-lift">
+                                                            No
+                                                        </label>
+                                                        <label class="form-check form-check-inline" for="dropoff-apartment-stairs">
+                                                            <input class="form-check-input" type="radio" name="dropoff-apartment-stairs-or-lift" value="stairs" id="dropoff-apartment-stairs">
+                                                            Yes - Stairs
+                                                        </label>
+                                                        <label class="form-check form-check-inline" for="dropoff-apartment-lift">
+                                                            <input class="form-check-input" type="radio" name="dropoff-apartment-stairs-or-lift" value="lift" id="dropoff-apartment-lift">
+                                                            Yes - Lift
+                                                        </label>
+                                                    </div>
+                                                    <div id="dropoff-apartment-lift-stairs-sub-levels" class="d-none">
+                                                        <div id="dropoff-apartment-flight-stairs">
+                                                            <p class="property-type-text mt-4">How many flights of stairs?</p>
+                                                            <div class="grid-three-one mt-2">
+                                                                <label class="form-check form-check-inline" for="dropoff-apartment-stairs-one">
+                                                                    <input class="form-check-input" type="radio" name="dropoff-apartment-stairs-or-lift-count" value="one" id="dropoff-apartment-stairs-one">
+                                                                    1 Flight
+                                                                </label>
+                                                                <label class="form-check form-check-inline" for="dropoff-apartment-stairs-two">
+                                                                    <input class="form-check-input" type="radio" name="dropoff-apartment-stairs-or-lift-count" value="two" id="dropoff-apartment-stairs-two">
+                                                                    2 Flights
+                                                                </label>
+                                                                <label class="form-check form-check-inline" for="dropoff-apartment-stairs-three">
+                                                                    <input class="form-check-input" type="radio" name="dropoff-apartment-stairs-or-lift-count" value="three" id="dropoff-apartment-stairs-three">
+                                                                    3 Flights
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div id="dropoff-apartment-flight" class="d-none">
+                                                            <div class="alert alert-info mt-4 d-flex gap-2" role="alert">
+                                                                <div><i class="fas fa-info-circle"></i></div>
+                                                                <div>
+                                                                    <p class="fw-500">Do you have a lift booking?</p>
+                                                                    <p class="fs-15 lh-22 mt-2">If you have a lift booking or set time to access your lift, please tell us in the comments below.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div id="dropoff-storage-sub-levels" class="d-none">
+                                                    <div class="mt-2">
+                                                        <div class="mb-3 mt-4">
+                                                            <label for="dropoff-storage-company-name" class="property-type-text form-label">Storage company name</label>
+                                                            <input type="text" name="dropoff-storage-company-name" id="dropoff-storage-company-name" class="form-control" placeholder="">
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label for="dropoff-storage-unit-number" class="property-type-text form-label">Storage unit number (if known)</label>
+                                                            <input type="text" name="dropoff-storage-unit-number" id="dropoff-storage-unit-number" class="form-control" placeholder="">
+                                                        </div>
+                                                    </div>
+                                                    <p class="property-type-text mt-4">What’s the walking distance from our truck to your storage unit?</p>
+                                                    <div class="grid-one-one mt-2">
+                                                        <label class="form-check form-check-inline" for="dropoff-storage-walking-distance-1">
+                                                            <input class="form-check-input" type="radio" name="dropoff-storage-walking-distance" value="1" id="dropoff-storage-walking-distance-1" checked>
+                                                            You can drive up to the door (< 10m walk)
+                                                        </label>
+                                                        <label class="form-check form-check-inline" for="dropoff-storage-walking-distance-2">
+                                                            <input class="form-check-input" type="radio" name="dropoff-storage-walking-distance" value="2" id="dropoff-storage-walking-distance-2">
+                                                            You can’t drive near to the door (> 20m walk)
+                                                        </label>
+                                                        <label class="form-check form-check-inline" for="dropoff-storage-walking-distance-3">
+                                                            <input class="form-check-input" type="radio" name="dropoff-storage-walking-distance" value="3" id="dropoff-storage-walking-distance-3">
+                                                            Use a lift to access storage unit
+                                                        </label>
+                                                        <label class="form-check form-check-inline" for="dropoff-storage-walking-distance-4">
+                                                            <input class="form-check-input" type="radio" name="dropoff-storage-walking-distance" value="4" id="dropoff-storage-walking-distance-4">
+                                                            I don't know
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div id="dropoff-commercial-sub-levels" class="d-none">
+                                                    <p class="property-type-text mt-4">What type of commercial property are we dropping off at?</p>
+                                                    <div class="grid-two-one mt-2">
+                                                        <label class="form-check form-check-inline" for="dropoff-commercial-office">
+                                                            <input class="form-check-input" type="radio" name="dropoff-commercial-property-type" value="office" id="dropoff-commercial-office">
+                                                            Office
+                                                        </label>
+                                                        <label class="form-check form-check-inline" for="dropoff-commercial-industrial">
+                                                            <input class="form-check-input" type="radio" name="dropoff-commercial-property-type" value="industrial" id="dropoff-commercial-industrial">
+                                                            Industrial
+                                                        </label>
+                                                        <label class="form-check form-check-inline" for="dropoff-commercial-shop">
+                                                            <input class="form-check-input" type="radio" name="dropoff-commercial-property-type" value="shop" id="dropoff-commercial-shop">
+                                                            Shop / Retail
+                                                        </label>
+                                                        <label class="form-check form-check-inline" for="dropoff-commercial-other">
+                                                            <input class="form-check-input" type="radio" name="dropoff-commercial-property-type" value="other" id="dropoff-commercial-other">
+                                                            Other
+                                                        </label>
+                                                    </div>
+                                                    <p class="property-type-text mt-4">Are stairs or a lift required to reach your commercial property?</p>
+                                                    <div class="grid-three-one mt-2">
+                                                        <label class="form-check form-check-inline" for="dropoff-commercial-no-stairs-lift">
+                                                            <input class="form-check-input" type="radio" name="dropoff-commercial-stairs-or-lift" value="no" id="dropoff-commercial-no-stairs-lift">
+                                                            No
+                                                        </label>
+                                                        <label class="form-check form-check-inline" for="dropoff-commercial-stairs">
+                                                            <input class="form-check-input" type="radio" name="dropoff-commercial-stairs-or-lift" value="stairs" id="dropoff-commercial-stairs">
+                                                            Yes - Stairs
+                                                        </label>
+                                                        <label class="form-check form-check-inline" for="dropoff-commercial-lift">
+                                                            <input class="form-check-input" type="radio" name="dropoff-commercial-stairs-or-lift" value="lift" id="dropoff-commercial-lift">
+                                                            Yes - Lift
+                                                        </label>
+                                                    </div>
+                                                    <div id="dropoff-commercial-lift-stairs-sub-levels" class="d-none">
+                                                        <div id="dropoff-commercial-flight-stairs">
+                                                            <p class="property-type-text mt-4">How many flights of stairs?</p>
+                                                            <div class="grid-three-one mt-2">
+                                                                <label class="form-check form-check-inline" for="dropoff-commercial-stairs-one">
+                                                                    <input class="form-check-input" type="radio" name="dropoff-commercial-stairs-or-lift-count" value="one" id="dropoff-commercial-stairs-one">
+                                                                    1 Flight
+                                                                </label>
+                                                                <label class="form-check form-check-inline" for="dropoff-commercial-stairs-two">
+                                                                    <input class="form-check-input" type="radio" name="dropoff-commercial-stairs-or-lift-count" value="two" id="dropoff-commercial-stairs-two">
+                                                                    2 Flights
+                                                                </label>
+                                                                <label class="form-check form-check-inline" for="dropoff-commercial-stairs-three">
+                                                                    <input class="form-check-input" type="radio" name="dropoff-commercial-stairs-or-lift-count" value="three" id="dropoff-commercial-stairs-three">
+                                                                    3 Flights
+                                                                </label>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div id="dropoff-truck-parking">
@@ -853,6 +1066,19 @@
                                                     <p class="fs-14">Anything we should know about access to this property?</p>
                                                     <textarea class="form-control" name="dropoff-comments" rows="3"></textarea>
                                                 </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-5 mb-5">
+                                        <div class="col-md-12">
+                                            <div class="text-center">
+                                                <h6 class="mb-2">Complex Moving Requirements?</h6>
+                                                <p class="help-text-style">
+                                                    Is your move a little out of the ordinary? Need packing help, rubbish removal or storage?
+                                                </p>
+                                                <p class="help-text-style">
+                                                    Call our office on <a href="tel:1300988114" style="color: #4c47e1;">1300 988 114</a> today.
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -934,7 +1160,8 @@
         }
     });
     
-    // when pickup-property-type is changed
+    
+    // propery access pickup JS Start
     document.querySelectorAll('input[name="pickup-property-type"]').forEach(input => {
         input.addEventListener('change', function() {
             if (this.value === 'house') {
@@ -983,7 +1210,6 @@
         });
     });
     
-    // when pickup-stairs-or-lift is changed
     document.querySelectorAll('input[name="pickup-stairs-or-lift"]').forEach(input => {
         input.addEventListener('change', function() {
             if (this.value === 'stairs') {
@@ -1002,7 +1228,6 @@
         });
     });
     
-    // when pickup-apartment-stairs-or-lift is changed
     document.querySelectorAll('input[name="pickup-apartment-stairs-or-lift"]').forEach(input => {
         input.addEventListener('change', function() {
             if (this.value === 'stairs') {
@@ -1021,7 +1246,6 @@
         });
     });
     
-    // when pickup-commercial-stairs-or-lift is changed
     document.querySelectorAll('input[name="pickup-commercial-stairs-or-lift"]').forEach(input => {
         input.addEventListener('change', function() {
             if (this.value === 'stairs') {
@@ -1036,5 +1260,107 @@
             }
         });
     });
+    // propery access pickup JS End
+    
+    // propery access dropoff JS Start
+    document.querySelectorAll('input[name="drop-property-type"]').forEach(input => {
+        input.addEventListener('change', function() {
+            if (this.value === 'house') {
+                document.getElementById('dropoff-house-sub-levels').classList.remove('d-none');
+                document.getElementById('dropoff-unit-sub-levels').classList.add('d-none');
+                document.getElementById('dropoff-townhouse-sub-levels').classList.add('d-none');
+                document.getElementById('dropoff-apartment-sub-levels').classList.add('d-none');
+                document.getElementById('dropoff-storage-sub-levels').classList.add('d-none');
+                document.getElementById('dropoff-commercial-sub-levels').classList.add('d-none');
+            } else if (this.value === 'unit') {
+                document.getElementById('dropoff-unit-sub-levels').classList.remove('d-none');
+                document.getElementById('dropoff-house-sub-levels').classList.add('d-none');
+                document.getElementById('dropoff-townhouse-sub-levels').classList.add('d-none');
+                document.getElementById('dropoff-apartment-sub-levels').classList.add('d-none');
+                document.getElementById('dropoff-storage-sub-levels').classList.add('d-none');
+                document.getElementById('dropoff-commercial-sub-levels').classList.add('d-none');
+            } else if (this.value === 'townhouse') {
+                document.getElementById('dropoff-townhouse-sub-levels').classList.remove('d-none');
+                document.getElementById('dropoff-house-sub-levels').classList.add('d-none');
+                document.getElementById('dropoff-unit-sub-levels').classList.add('d-none');
+                document.getElementById('dropoff-apartment-sub-levels').classList.add('d-none');
+                document.getElementById('dropoff-storage-sub-levels').classList.add('d-none');
+                document.getElementById('dropoff-commercial-sub-levels').classList.add('d-none');
+            } else if (this.value === 'apartment') {
+                document.getElementById('dropoff-apartment-sub-levels').classList.remove('d-none');
+                document.getElementById('dropoff-house-sub-levels').classList.add('d-none');
+                document.getElementById('dropoff-unit-sub-levels').classList.add('d-none');
+                document.getElementById('dropoff-townhouse-sub-levels').classList.add('d-none');
+                document.getElementById('dropoff-storage-sub-levels').classList.add('d-none');
+                document.getElementById('dropoff-commercial-sub-levels').classList.add('d-none');
+            } else if (this.value === 'storage') {
+                document.getElementById('dropoff-storage-sub-levels').classList.remove('d-none');
+                document.getElementById('dropoff-house-sub-levels').classList.add('d-none');
+                document.getElementById('dropoff-unit-sub-levels').classList.add('d-none');
+                document.getElementById('dropoff-townhouse-sub-levels').classList.add('d-none');
+                document.getElementById('dropoff-apartment-sub-levels').classList.add('d-none');
+                document.getElementById('dropoff-commercial-sub-levels').classList.add('d-none');
+            } else if (this.value === 'commercial') {
+                document.getElementById('dropoff-commercial-sub-levels').classList.remove('d-none');
+                document.getElementById('dropoff-house-sub-levels').classList.add('d-none');
+                document.getElementById('dropoff-unit-sub-levels').classList.add('d-none');
+                document.getElementById('dropoff-townhouse-sub-levels').classList.add('d-none');
+                document.getElementById('dropoff-apartment-sub-levels').classList.add('d-none');
+                document.getElementById('dropoff-storage-sub-levels').classList.add('d-none');
+            }
+        });
+    });
+    
+    document.querySelectorAll('input[name="dropoff-stairs-or-lift"]').forEach(input => {
+        input.addEventListener('change', function() {
+            if (this.value === 'stairs') {
+                document.getElementById('dropoff-lift-stairs-sub-levels').classList.remove('d-none');
+                document.getElementById('dropoff-flight-stairs').classList.remove('d-none');
+                document.getElementById('dropoff-flight').classList.add('d-none');
+            } else if(this.value === 'lift') {
+                document.getElementById('dropoff-lift-stairs-sub-levels').classList.remove('d-none');
+                document.getElementById('dropoff-flight').classList.remove('d-none');
+                document.getElementById('dropoff-flight-stairs').classList.add('d-none');
+            } else {
+                document.getElementById('dropoff-lift-stairs-sub-levels').classList.add('d-none');
+                document.getElementById('dropoff-flight').classList.add('d-none');
+                document.getElementById('dropoff-flight-stairs').classList.add('d-none');
+            }
+        });
+    });
+    
+    document.querySelectorAll('input[name="dropoff-apartment-stairs-or-lift"]').forEach(input => {
+        input.addEventListener('change', function() {
+            if (this.value === 'stairs') {
+                document.getElementById('dropoff-apartment-lift-stairs-sub-levels').classList.remove('d-none');
+                document.getElementById('dropoff-apartment-flight-stairs').classList.remove('d-none');
+                document.getElementById('dropoff-apartment-flight').classList.add('d-none');
+            } else if(this.value === 'lift') {
+                document.getElementById('dropoff-apartment-lift-stairs-sub-levels').classList.remove('d-none');
+                document.getElementById('dropoff-apartment-flight').classList.remove('d-none');
+                document.getElementById('dropoff-apartment-flight-stairs').classList.add('d-none');
+            } else {
+                document.getElementById('dropoff-apartment-lift-stairs-sub-levels').classList.add('d-none');
+                document.getElementById('dropoff-apartment-flight').classList.add('d-none');
+                document.getElementById('dropoff-apartment-flight-stairs').classList.add('d-none');
+            }
+        });
+    });
+    
+    document.querySelectorAll('input[name="dropoff-commercial-stairs-or-lift"]').forEach(input => {
+        input.addEventListener('change', function() {
+            if (this.value === 'stairs') {
+                document.getElementById('dropoff-commercial-lift-stairs-sub-levels').classList.remove('d-none');
+                document.getElementById('dropoff-commercial-flight-stairs').classList.remove('d-none');
+            } else if(this.value === 'lift') {
+                document.getElementById('dropoff-commercial-lift-stairs-sub-levels').classList.remove('d-none');
+                document.getElementById('dropoff-commercial-flight-stairs').classList.add('d-none');
+            } else {
+                document.getElementById('dropoff-commercial-lift-stairs-sub-levels').classList.add('d-none');
+                document.getElementById('dropoff-commercial-flight-stairs').classList.add('d-none');
+            }
+        });
+    });
+    // propery access dropoff JS End
 </script>
 @endsection
