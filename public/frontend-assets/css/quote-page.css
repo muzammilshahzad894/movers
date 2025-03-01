@@ -1,0 +1,414 @@
+:root {
+    --main-color: #89C63E;
+    --dark-color: #73a13a;
+    --step-color: #ced7e0;
+    --step-size: 24px;
+    --steps: 4;
+    --progress-width: calc((var(--steps) - 1) / var(--steps) * 100%);
+}
+
+.home-3 .navbar {
+    padding: 0px !important;
+    border-bottom: 1px solid #d0d5dd;
+}
+
+.home-3 .navbar .nav-link {
+    font-size: 14px !important;
+}
+
+.home-3.header,
+.footer-area {
+    display: none;
+}
+
+.quote-page-header {
+    display: block !important;
+}
+
+.navbar-brand img {
+    width: 95px;
+}
+
+.main {
+    background: #F0F2FE;
+    min-height: 100vh;
+}
+
+.progress-section {
+    background: #fff;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #d0d5dd;
+}
+
+.progress-container {
+    position: relative;
+}
+
+.progress-container::before {
+    content: "";
+    height: 4px;
+    width: var(--progress-width);
+    background-color: var(--step-color);
+    position: absolute;
+    top: calc(var(--step-size) / 2);
+    left: 50%;
+    translate: -50% -50%;
+}
+
+.progress-container .progress {
+    height: 4px;
+    width: var(--progress-width);
+    background-color: var(--main-color);
+    position: absolute;
+    top: calc(var(--step-size) / 2);
+    left: 50%;
+    translate: -50% -50%;
+    z-index: 2;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: 0.3s;
+}
+
+.progress-container ol {
+    list-style-type: none;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    counter-reset: step-number;
+    position: relative;
+    z-index: 3;
+    margin-bottom: 0px;
+}
+
+.progress-container li {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--step-color);
+    transition: 0.3s linear 0.3s;
+    text-align: center;
+    font-size: 14px !important;
+    padding-right: 32px;
+}
+
+.progress-container li::before {
+    counter-increment: step-number;
+    content: counter(step-number);
+    background-color: var(--step-color);
+    width: var(--step-size);
+    height: var(--step-size);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #fff;
+    transition: 0.3s linear 0.3s;
+    font-size: 1rem;
+}
+
+@media (min-width: 480px) {
+    .progress-container li {
+        font-size: 1rem;
+        gap: 8px;
+    }
+}
+
+.progress-container li:where(.done, .current) {
+    color: #333;
+    font-weight: 500;
+}
+
+.progress-container li.done::before {
+    background-color: var(--main-color);
+}
+
+.progress-container li.current::before {
+    background-color: var(--main-color);
+    box-shadow: 0 0 0 3px rgb(84 104 21 / 25%);
+}
+
+.steps-container {
+    display: flex;
+    flex-direction: column;
+    /* Stack steps vertically */
+    overflow: hidden;
+}
+
+.step {
+    flex: 1 0 100%;
+    padding: 24px 8px;
+    opacity: 0;
+    transition: opacity 0.3s, display 0s 0.3s;
+    /* Add display transition */
+    height: fit-content;
+    display: none !important;
+    /* Hide steps by default */
+    gap: 8px;
+}
+
+.step.current {
+    opacity: 1;
+    display: grid !important;
+}
+
+.step-1-details {
+    max-width: 600px;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-top: 16px;
+    padding-inline: 8px;
+}
+
+.controls button {
+    flex: 1;
+}
+
+.completed {
+    text-align: center;
+}
+
+.completed h3 {
+    margin-bottom: 8px;
+}
+
+.completed svg {
+    width: 100px;
+    height: 100px;
+    stroke: yellowgreen;
+}
+
+.completed:not([hidden])~* {
+    display: none;
+}
+
+.sticky-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    padding: 20px;
+    z-index: 1000;
+    border-top: 1px solid #d0d5dd;
+}
+
+.sticky-footer .theme-btn {
+    padding: 5px 45px !important;
+    border-radius: 6px;
+}
+
+@media (max-width: 991px) {
+    .navbar {
+        position: relative !important;
+    }
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+    width: 100%;
+}
+
+.form-group input {
+    height: 50px;
+    padding-left: 40px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    transition: all 0.3s;
+    width: 100%;
+}
+
+.form-group input:focus {
+    border-color: var(--main-color);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.form-group label {
+    position: absolute;
+    top: 50%;
+    left: 40px;
+    transform: translateY(-50%);
+    color: #999;
+    pointer-events: none;
+    transition: 0.3s ease-in-out;
+}
+
+.form-group input:focus+label,
+.form-group input:not(:placeholder-shown)+label {
+    top: 10px;
+    left: 40px;
+    font-size: 12px;
+    color: var(--main-color);
+}
+
+.form-group .fa-map-marker-alt {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #999;
+}
+
+.add-stop-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    cursor: pointer;
+    color: var(--main-color);
+}
+
+.add-stop-btn .fa-plus {
+    margin-right: 5px;
+}
+
+.remove-stop-btn {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #999;
+}
+
+.extra-stop {
+    position: relative;
+    margin-top: 10px;
+}
+
+.contact-wrapper {
+    padding: 20px 30px !important;
+    border-radius: 16px;
+}
+
+.step-2-details .contact-wrapper .title {
+    color: #475467;
+    font-weight: 500;
+    margin-bottom: 12px !important;
+}
+
+.step-2-details .contact-wrapper .from-location-name,
+.step-2-details .contact-wrapper .to-location-name {
+    font-size: 20px;
+    font-weight: 600;
+    color: #292767;
+}
+
+.google-map-container {
+    max-height: 160px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.property-type-text {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #344054;
+}
+
+.grid-three-one-responsive {
+    display: grid;
+    background-color: rgba(0, 0, 0, .06);
+    grid-gap: 1px;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, .06);
+    overflow: auto;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 767px) {
+    .grid-three-one-responsive {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.grid-three-one {
+    display: grid;
+    background-color: rgba(0, 0, 0, .06);
+    grid-gap: 1px;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, .06);
+    overflow: auto;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-two-one {
+    display: grid;
+    background-color: rgba(0, 0, 0, .06);
+    grid-gap: 1px;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, .06);
+    overflow: auto;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-one-one {
+    display: grid;
+    background-color: rgba(0, 0, 0, .06);
+    grid-gap: 1px;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, .06);
+    overflow: auto;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.grid-three-one .form-check, .grid-three-one-responsive .form-check, .grid-two-one .form-check, .grid-one-one .form-check {
+    background-color: #fff;
+    margin: 0;
+    align-items: flex-start;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    padding: 15px 34px;
+}
+
+.form-check-inline:has(input:checked) {
+    background-color: #f6f8fe;
+}
+.grid-three-one .form-check:hover, .grid-three-one-responsive .form-check:hover, .grid-two-one .form-check:hover, .grid-one-one .form-check:hover {
+    background-color: #f6f8fe;
+}
+
+.form-check-input {
+    font-size: 18px;
+}
+
+#pickup-storage-company-name:focus, #pickup-storage-unit-number:focus {
+    outline: none;
+    box-shadow: none !important;
+    border: 1px solid #89C63E;
+}
+
+#pickup-storage-company-name, #pickup-storage-unit-number {
+    padding: 10px 14px !important;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+.fs-15 {
+    font-size: 15px;
+}
+
+.lh-22 {
+    line-height: 22px;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.help-text-style {
+    font-size: 15px;
+    color: rgba(0, 0, 0, .85098);
+}
