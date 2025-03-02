@@ -2,6 +2,8 @@
 
 @section('css')
 <link rel="stylesheet" href="{{ asset('frontend-assets/css/quote-page.css') }}">
+<!-- Date Range Picker CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css">
 @endsection
 
 @section('content')
@@ -52,6 +54,9 @@
                             <div class="step">
                                 @include('frontend.steps.move-and-size-step')
                             </div>
+                            <div class="step">
+                                @include('frontend.steps.date-time-step')
+                            </div>
                         </div>
                     </div>
                 </form>
@@ -69,4 +74,6 @@
 
 @section('javascript')
     @include('frontend.steps._js')
+    <script src="https://cdn.jsdelivr.net/npm/moment/min/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.js"></script>
 @endsection

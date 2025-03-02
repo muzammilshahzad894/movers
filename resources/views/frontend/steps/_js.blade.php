@@ -362,11 +362,11 @@
         { id: 91, name: "Weights Set", type: "fitness-gym" },
         { id: 92, name: "Treadmill", type: "fitness-gym" },
         
-        { id: 93, name: "Medium Box", type: "box-storage" },
-        { id: 94, name: "Small Box (Book & Wine)", type: "box-storage" },
-        { id: 95, name: "Large Box (Tea Chest)", type: "box-storage" },
-        { id: 96, name: "Plastic Tub", type: "box-storage" },
-        { id: 97, name: "Striped Bag", type: "box-storage" },
+        { id: 93, name: "Medium Box", type: "boxes-storage" },
+        { id: 94, name: "Small Box (Book & Wine)", type: "boxes-storage" },
+        { id: 95, name: "Large Box (Tea Chest)", type: "boxes-storage" },
+        { id: 96, name: "Plastic Tub", type: "boxes-storage" },
+        { id: 97, name: "Striped Bag", type: "boxes-storage" },
     ];
 
     let moveSizeQuantities = {};
@@ -482,10 +482,10 @@
     
     // render box storage items
     function renderBoxStorageItems() {
-        const boxStorageItems = document.getElementById("boxStorageItems");
+        const boxStorageItems = document.getElementById("boxesStorageItems");
         boxStorageItems.innerHTML = "";
 
-        moveSizes.filter(size => size.type === "box-storage").forEach(size => {
+        moveSizes.filter(size => size.type === "boxes-storage").forEach(size => {
             boxStorageItems.innerHTML += createMoveSizeItem(size.name, size.type);
         });
 
@@ -536,7 +536,7 @@
         if(type == "fitness-gym") {
             renderFitnessGymItems(name, change, type);
         }
-        if(type == "box-storage") {
+        if(type == "boxes-storage") {
             renderBoxStorageItems(name, change, type);
         }
         // set quantity in typeWiseQuantities object for each type
@@ -623,4 +623,50 @@
     renderFitnessGymItems();
     renderBoxStorageItems();
     // Move Size Step JS End
+    
+    // Date Time JS Start
+    $(document).ready(function() {
+        // Single Date Picker
+        $('#singleDate').daterangepicker({
+            singleDatePicker: true,
+            showDropdowns: true,
+            autoApply: true,
+            opens: 'right',
+            locale: {
+                format: 'YYYY-MM-DD'
+            }
+        });
+
+        // Date Range Picker
+        $('#daterange').daterangepicker({
+            opens: 'right',
+            autoUpdateInput: false,
+            showDropdowns: true,
+            autoApply: true,
+        });
+
+        // Update input value when date range is selected
+        $('#daterange').on('apply.daterangepicker', function(ev, picker) {
+            $(this).val(picker.startDate.format('YYYY-MM-DD') + ' - ' + picker.endDate.format('YYYY-MM-DD'));
+        });
+    });
+    
+    // wehn value of move_date_type change check using name attribute on radio
+    $('input[name="move_date_type"]').change(function() {
+        console.log(this.value);
+        if (this.value == 'on' || this.value == 'on_or_before') {
+            $('#select-date-section').removeClass('d-none');
+            $('#singleDateSection').removeClass('d-none');
+            $('#dateRangeSection').addClass('d-none');
+        } else if (this.value == 'between') {
+            $('#select-date-section').removeClass('d-none');
+            $('#singleDateSection').addClass('d-none');
+            $('#dateRangeSection').removeClass('d-none');
+        } else {
+            $('#select-date-section').addClass('d-none');
+            $('#singleDateSection').addClass('d-none');
+            $('#dateRangeSection').addClass('d-none');
+        }
+    });
+    // Date Time JS End
 </script>

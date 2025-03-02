@@ -583,3 +583,19 @@
     transform: rotate(180deg);
 }
 /* Move Size Step Style End */
+
+/* Date Time Style Start */
+.date_type_radio {
+    border: 1px solid #b5bcc9;
+    border-radius: 50px;
+    margin-right: 4px;
+    padding: 10px 20px;
+    margin-top: 8px;
+}
+
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+    background-color: #89C63E;
+    color: white;
+    border-color: #89C63E;
+}
+/* Date Time Style End */
