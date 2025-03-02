@@ -16,9 +16,9 @@
             document.querySelector('.add-stop-btn').style.display = 'flex';
         });
     });
-
+    
+    var stepNumber = 1;
     document.querySelector('.next-btn').addEventListener('click', function() {
-        let stepNumber = 1;
         const currentStep = document.querySelector('.step.current');
         const nextStep = currentStep.nextElementSibling;
         if (nextStep) {
@@ -259,4 +259,368 @@
         });
     });
     // propery access dropoff JS End
+    
+    // Move Size Step JS Start
+    const moveSizes = [
+        { id: 1, name: "Bed & Mattress - King", type: "bedroom" },
+        { id: 2, name: "Bed & Mattress - Queen", type: "bedroom" },
+        { id: 3, name: "Bed & Mattress - Double", type: "bedroom" },
+        { id: 4, name: "Bed & Mattress - Single", type: "bedroom" },
+        { id: 5, name: "Bed & Mattress - Bunks", type: "bedroom" },
+        { id: 6, name: "Bedside Table", type: "bedroom" },
+        { id: 7, name: "Chest of Drawers", type: "bedroom" },
+        { id: 8, name: "Tallboy", type: "bedroom" },
+        { id: 9, name: "Wardrobe", type: "bedroom" },
+        { id: 10, name: "Cupboard", type: "bedroom" },
+        { id: 11, name: "Bookcase", type: "bedroom" },
+        { id: 12, name: "Dressing Table", type: "bedroom" },
+        { id: 13, name: "Storage Cube Shelf", type: "bedroom" },
+        { id: 14, name: "Cot", type: "bedroom" },
+        { id: 15, name: "Mirror (small)", type: "bedroom" },
+        { id: 16, name: "Mirror (large)", type: "bedroom" },
+        { id: 17, name: "Picture / Artwork", type: "bedroom" },
+        { id: 18, name: "Suitcase", type: "bedroom" },
+
+        { id: 19, name: "Sofa (2 seater)", type: "living-room" },
+        { id: 20, name: "Sofa (3 seater)", type: "living-room" },
+        { id: 21, name: "Sofa (L shaped / modular)", type: "living-room" },
+        { id: 22, name: "Arm Chair (single)", type: "living-room" },
+        { id: 23, name: "Ottoman", type: "living-room" },
+        { id: 24, name: "TV / Entertainment Unit", type: "living-room" },
+        { id: 25, name: "Coffee Table", type: "living-room" },
+        { id: 26, name: "Buffet / Sideboard", type: "living-room" },
+        { id: 27, name: "Bookcase (Living Room)", type: "living-room" },
+        { id: 28, name: "China cabinet", type: "living-room" },
+        { id: 29, name: "Storage Cube Shelf (Living Room)", type: "living-room" },
+        { id: 30, name: "TV (Small)", type: "living-room" },
+        { id: 31, name: "TV (Medium)", type: "living-room" },
+        { id: 32, name: "TV (Large)", type: "living-room" },
+        { id: 33, name: "Picture / Artwork (Living Room)", type: "living-room" },
+        { id: 34, name: "Rug", type: "living-room" },
+        { id: 35, name: "Electric Organ", type: "living-room" },
+        { id: 36, name: "Piano Stool", type: "living-room" },
+        { id: 37, name: "Piano (upright - additional $120 fee)", type: "living-room" },
+        { id: 38, name: "Pool Table (Small up to 6 foot - additional $150 fee)", type: "living-room" },
+        { id: 39, name: "Pool Table (Medium 7 foot - additional $150 fee)", type: "living-room" },
+        { id: 40, name: "Pool Table (Large 8-9 foot - additional $150 fee)", type: "living-room" },
+        
+        { id: 41, name: "Washing Machine (Top Load)", type: "laundry" },
+        { id: 42, name: "Washing Machine (Front Load)", type: "laundry" },
+        { id: 43, name: "Tumble Dryer", type: "laundry" },
+        { id: 44, name: "Tumble Dryer Cabinet", type: "laundry" },
+        { id: 45, name: "Laundry Cupboard", type: "laundry" },
+        { id: 46, name: "Broom or Mop", type: "laundry" },
+        { id: 47, name: "Clothes Basket", type: "laundry" },
+        { id: 48, name: "Clothes Horse", type: "laundry" },
+        { id: 49, name: "Vacuum Cleaner", type: "laundry" },
+        { id: 50, name: "Ironing Board", type: "laundry" },
+        
+        { id: 51, name: "Desk", type: "study-office" },
+        { id: 52, name: "Computer / Monitor", type: "study-office" },
+        { id: 53, name: "Office Chair", type: "study-office" },
+        { id: 54, name: "Printer", type: "study-office" },
+        { id: 55, name: "Filing Cabinet", type: "study-office" },
+        { id: 56, name: "Bookcase (Study / Office)", type: "study-office" },
+        { id: 57, name: "Storage Cube Shelf (Study / Office)", type: "study-office" },
+        
+        { id: 58, name: "Hall Stand / Table", type: "hall-entry" },
+        { id: 59, name: "Hat Rack / Coat Stand", type: "hall-entry" },
+        { id: 60, name: "Grand Father Clock", type: "hall-entry" },
+        { id: 61, name: "Hall Mirror (small)", type: "hall-entry" },
+        { id: 62, name: "Hall Mirror (large)", type: "hall-entry" },
+        { id: 63, name: "Hall Picture / Artwork", type: "hall-entry" },
+        { id: 64, name: "Hall Rug", type: "hall-entry" },
+        
+        { id: 65, name: "Outdoor Chair", type: "outdoor-garden" },
+        { id: 66, name: "Pot Plant (Small)", type: "outdoor-garden" },
+        { id: 67, name: "Pot Plant (Large)", type: "outdoor-garden" },
+        { id: 68, name: "Trampoline (Dismantled)", type: "outdoor-garden" },
+        { id: 69, name: "Outdoor Table (no chairs)", type: "outdoor-garden" },
+        { id: 70, name: "Outdoor Table (+2 chairs)", type: "outdoor-garden" },
+        { id: 71, name: "Outdoor Table (+4 chairs)", type: "outdoor-garden" },
+        { id: 72, name: "Outdoor Table (+6 chairs)", type: "outdoor-garden" },
+        { id: 73, name: "Outdoor Table (+8 chairs)", type: "outdoor-garden" },
+        { id: 74, name: "Barbeque", type: "outdoor-garden" },
+        { id: 75, name: "Webber", type: "outdoor-garden" },
+        { id: 76, name: "Garden Seat", type: "outdoor-garden" },
+        { id: 77, name: "Garden Hose", type: "outdoor-garden" },
+        
+        { id: 78, name: "Bike", type: "garage-shed" },
+        { id: 79, name: "Lawn Mower", type: "garage-shed" },
+        { id: 80, name: "Whipper Snipper", type: "garage-shed" },
+        { id: 81, name: "Wheel Barrow", type: "garage-shed" },
+        { id: 82, name: "Ladder", type: "garage-shed" },
+        { id: 83, name: "Work Bench", type: "garage-shed" },
+        { id: 84, name: "Tool Cupboard", type: "garage-shed" },
+        { id: 85, name: "Garage Shelving (disassembled)", type: "garage-shed" },
+        { id: 86, name: "Garage Shelving (assembled)", type: "garage-shed" },
+        
+        { id: 87, name: "Bike (gym)", type: "fitness-gym" },
+        { id: 88, name: "Swing (Dismantled)", type: "fitness-gym" },
+        { id: 89, name: "Table Tennis Table", type: "fitness-gym" },
+        { id: 90, name: "Weights Bench", type: "fitness-gym" },
+        { id: 91, name: "Weights Set", type: "fitness-gym" },
+        { id: 92, name: "Treadmill", type: "fitness-gym" },
+        
+        { id: 93, name: "Medium Box", type: "box-storage" },
+        { id: 94, name: "Small Box (Book & Wine)", type: "box-storage" },
+        { id: 95, name: "Large Box (Tea Chest)", type: "box-storage" },
+        { id: 96, name: "Plastic Tub", type: "box-storage" },
+        { id: 97, name: "Striped Bag", type: "box-storage" },
+    ];
+
+    let moveSizeQuantities = {};
+    let typeWiseQuantities = {};
+
+    function renderMoveSizeItems(filter = "") {
+        const moveSizeList = document.getElementById("moveSizeDropdown");
+        moveSizeList.innerHTML = "";
+
+        moveSizes.forEach(size => {
+            if (size.name.toLowerCase().includes(filter.toLowerCase())) {
+                moveSizeList.innerHTML += createMoveSizeItem(size.name, size.type);
+            }
+        });
+
+        attachMoveSizeEventListeners();
+    }
+
+    function renderBedroomItems() {
+        const bedroomItems = document.getElementById("bedroomItems");
+        bedroomItems.innerHTML = "";
+
+        moveSizes.filter(size => size.type === "bedroom").forEach(size => {
+            bedroomItems.innerHTML += createMoveSizeItem(size.name, size.type);
+        });
+
+        attachMoveSizeEventListeners();
+    }
+    
+    // renderlivingRoomItems
+    function renderLivingRoomItems() {
+        const livingRoomItems = document.getElementById("livingRoomItems");
+        livingRoomItems.innerHTML = "";
+
+        moveSizes.filter(size => size.type === "living-room").forEach(size => {
+            livingRoomItems.innerHTML += createMoveSizeItem(size.name, size.type);
+        });
+
+        attachMoveSizeEventListeners();
+    }
+    
+    // renderLaundryItems
+    function renderLaundryItems() {
+        const laundryItems = document.getElementById("laundryItems");
+        laundryItems.innerHTML = "";
+
+        moveSizes.filter(size => size.type === "laundry").forEach(size => {
+            laundryItems.innerHTML += createMoveSizeItem(size.name, size.type);
+        });
+
+        attachMoveSizeEventListeners();
+    }
+    
+    // renderStudyOffice
+    function renderStudyOfficeItems() {
+        const studyOfficeItems = document.getElementById("studyOfficeItems");
+        studyOfficeItems.innerHTML = "";
+
+        moveSizes.filter(size => size.type === "study-office").forEach(size => {
+            studyOfficeItems.innerHTML += createMoveSizeItem(size.name, size.type);
+        });
+
+        attachMoveSizeEventListeners();
+    }
+    
+    // renderHallEntryItems
+    function renderHallEntryItems() {
+        const hallEntryItems = document.getElementById("hallEntryItems");
+        hallEntryItems.innerHTML = "";
+
+        moveSizes.filter(size => size.type === "hall-entry").forEach(size => {
+            hallEntryItems.innerHTML += createMoveSizeItem(size.name, size.type);
+        });
+
+        attachMoveSizeEventListeners();
+    }
+    
+    // renderOutdoorGardenItems
+    function renderOutdoorGardenItems() {
+        const outdoorGardenItems = document.getElementById("outdoorGardenItems");
+        outdoorGardenItems.innerHTML = "";
+
+        moveSizes.filter(size => size.type === "outdoor-garden").forEach(size => {
+            outdoorGardenItems.innerHTML += createMoveSizeItem(size.name, size.type);
+        });
+
+        attachMoveSizeEventListeners();
+    }
+    
+    // renderGarageShedItems
+    function renderGarageShedItems() {
+        const garageShedItems = document.getElementById("garageShedItems");
+        garageShedItems.innerHTML = "";
+
+        moveSizes.filter(size => size.type === "garage-shed").forEach(size => {
+            garageShedItems.innerHTML += createMoveSizeItem(size.name, size.type);
+        });
+
+        attachMoveSizeEventListeners();
+    }
+    
+    // renderFitnessGymItems
+    function renderFitnessGymItems() {
+        const fitnessGymItems = document.getElementById("fitnessGymItems");
+        fitnessGymItems.innerHTML = "";
+
+        moveSizes.filter(size => size.type === "fitness-gym").forEach(size => {
+            fitnessGymItems.innerHTML += createMoveSizeItem(size.name, size.type);
+        });
+
+        attachMoveSizeEventListeners();
+    }
+    
+    // render box storage items
+    function renderBoxStorageItems() {
+        const boxStorageItems = document.getElementById("boxStorageItems");
+        boxStorageItems.innerHTML = "";
+
+        moveSizes.filter(size => size.type === "box-storage").forEach(size => {
+            boxStorageItems.innerHTML += createMoveSizeItem(size.name, size.type);
+        });
+
+        attachMoveSizeEventListeners();
+    }
+
+    function createMoveSizeItem(name, type) {
+        const quantity = moveSizeQuantities[name] || 0;
+        return `
+            <div class="move-size-item">
+                <span class="item-name">${name}</span>
+                <div class="move-size-qty-btn">
+                    ${quantity > 0 ? `<button class="btn btn-sm move-size-decrease" data-name="${name}" data-type="${type}">-</button>` : ""}
+                    <span class="mx-2">${quantity}</span>
+                    <button class="btn btn-sm move-size-increase" data-name="${name}" data-type="${type}">+</button>
+                </div>
+            </div>
+        `;
+    }
+
+    function updateQuantities(name, change, type) {
+        moveSizeQuantities[name] = (moveSizeQuantities[name] || 0) + change;
+        if (moveSizeQuantities[name] < 1) delete moveSizeQuantities[name];
+
+        console.log("Updated Quantities:", moveSizeQuantities);
+        renderMoveSizeItems(document.getElementById("moveSizeSearch").value);
+        if(type == "bedroom") {
+            renderBedroomItems(name, change, type);
+        }
+        if(type == "living-room") {
+            renderLivingRoomItems(name, change, type);
+        }
+        if(type == "laundry") {
+            renderLaundryItems(name, change, type);
+        }
+        if(type == "study-office") {
+            renderStudyOfficeItems(name, change, type);
+        }
+        if(type == "hall-entry") {
+            renderHallEntryItems(name, change, type);
+        }
+        if(type == "outdoor-garden") {
+            renderOutdoorGardenItems(name, change, type);
+        }
+        if(type == "garage-shed") {
+            renderGarageShedItems(name, change, type);
+        }
+        if(type == "fitness-gym") {
+            renderFitnessGymItems(name, change, type);
+        }
+        if(type == "box-storage") {
+            renderBoxStorageItems(name, change, type);
+        }
+        // set quantity in typeWiseQuantities object for each type
+        if (typeWiseQuantities[type]) {
+            typeWiseQuantities[type] += change;
+        } else {
+            typeWiseQuantities[type] = change;
+        }
+        console.log("typeWiseQuantities", typeWiseQuantities);
+        // set total-bedrooms-count by filtering bedroom type from typeWiseQuantities object
+        let typeId = "total-" + type + "-count";
+        document.getElementById(typeId).innerText = typeWiseQuantities[type] || 0;
+    }
+
+    function attachMoveSizeEventListeners() {
+        document.querySelectorAll(".move-size-increase, .move-size-decrease").forEach(btn => {
+            let newBtn = btn.cloneNode(true); // Clone the button to remove previous listeners
+            btn.replaceWith(newBtn); // Replace old button to remove old event listeners
+
+            newBtn.addEventListener("click", function(event) {
+                event.stopPropagation();
+                const name = this.getAttribute("data-name");
+                const type = this.getAttribute("data-type");
+                const change = this.classList.contains("move-size-increase") ? 1 : -1;
+                updateQuantities(name, change, type);
+            });
+        });
+    }
+
+
+    document.getElementById("moveSizeSearch").addEventListener("focus", function() {
+        document.getElementById("moveSizeDropdown").style.display = "block";
+        renderMoveSizeItems(this.value);
+    });
+
+    document.getElementById("moveSizeSearch").addEventListener("input", function() {
+        renderMoveSizeItems(this.value);
+    });
+
+    document.addEventListener("click", function(event) {
+        if (!document.querySelector(".move-size-container").contains(event.target)) {
+            document.getElementById("moveSizeDropdown").style.display = "none";
+        }
+    });
+
+    // Toggle bedroom section
+    function toggleSection(sectionId) {
+        const sections = ["bedroom", "livingRoom", "laundry", "studyOffice", "hallEntry", "outdoorGarden", "garageShed", "fitnessGym", "boxesStorage"]; // Add more sections as needed
+
+        sections.forEach(id => {
+            const section = document.getElementById(`${id}Items`);
+            const icon = document.getElementById(`${id}Icon`);
+
+            if (id === sectionId) {
+                // Toggle the clicked section
+                if (section.style.maxHeight === "0px" || section.style.maxHeight === "") {
+                    section.style.maxHeight = "fit-content";
+                    icon.classList.add("open");
+                } else {
+                    section.style.maxHeight = "0px";
+                    icon.classList.remove("open");
+                }
+            } else {
+                // Close other sections
+                section.style.maxHeight = "0px";
+                icon.classList.remove("open");
+            }
+        });
+    }
+
+    // Attach event listeners dynamically
+    ["bedroom", "livingRoom", "laundry", "studyOffice", "hallEntry", "outdoorGarden", "garageShed", "fitnessGym", "boxesStorage"].forEach(sectionId => {
+        document.getElementById(`${sectionId}Toggle`).addEventListener("click", () => toggleSection(sectionId));
+    });
+
+
+    renderBedroomItems();
+    renderLivingRoomItems();
+    renderLaundryItems();
+    renderStudyOfficeItems();
+    renderHallEntryItems();
+    renderOutdoorGardenItems();
+    renderGarageShedItems();
+    renderFitnessGymItems();
+    renderBoxStorageItems();
+    // Move Size Step JS End
 </script>

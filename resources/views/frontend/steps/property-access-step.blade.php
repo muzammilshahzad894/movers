@@ -576,7 +576,7 @@
                     Is your move a little out of the ordinary? Need packing help, rubbish removal or storage?
                 </p>
                 <p class="help-text-style">
-                    Call our office on <a href="tel:1300988114" style="color: #4c47e1;">1300 988 114</a> today.
+                    Call our office on <a href="tel:+61400982424" class="link-color">+61400982424</a> today.
                 </p>
             </div>
         </div>

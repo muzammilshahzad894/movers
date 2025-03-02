@@ -14,10 +14,22 @@
                     <div class="progress"></div>
 
                     <ol>
-                        <li class="current">Locations</li>
-                        <li>Move Size</li>
-                        <li>Date & Time</li>
-                        <li>Details</li>
+                        <li class="current">
+                            <span class="step-text">Locations</span>
+                            <span class="step-icon d-none"><i class="fas fa-map-marker-alt"></i></span>
+                        </li>
+                        <li>
+                            <span class="step-text">Move Size</span>
+                            <span class="step-icon d-none"><i class="fas fa-dolly"></i></span>
+                        </li>
+                        <li>
+                            <span class="step-text">Date & Time</span>
+                            <span class="step-icon d-none"><i class="far fa-calendar-alt"></i></span>
+                        </li>
+                        <li>
+                            <span class="step-text">Details</span>
+                            <span class="step-icon d-none"><i class="fas fa-info-circle"></i></span>
+                        </li>
                     </ol>
                 </div>
             </div>
@@ -36,6 +48,9 @@
                             </div>
                             <div class="step">
                                 @include('frontend.steps.property-access-step')
+                            </div>
+                            <div class="step">
+                                @include('frontend.steps.move-and-size-step')
                             </div>
                         </div>
                     </div>
